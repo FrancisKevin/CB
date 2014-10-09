@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5EF7FCA19E631FE00CC2440 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EF7FC919E631FE00CC2440 /* AppDelegate.swift */; };
+		C5EF7FCC19E631FE00CC2440 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EF7FCB19E631FE00CC2440 /* ViewController.swift */; };
+		C5EF7FCF19E631FE00CC2440 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5EF7FCD19E631FE00CC2440 /* Main.storyboard */; };
+		C5EF7FD119E631FE00CC2440 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5EF7FD019E631FE00CC2440 /* Images.xcassets */; };
+		C5EF7FD419E631FE00CC2440 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5EF7FD219E631FE00CC2440 /* LaunchScreen.xib */; };
+		C5EF7FE019E631FE00CC2440 /* StudySwiftPDFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EF7FDF19E631FE00CC2440 /* StudySwiftPDFTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5EF7FDA19E631FE00CC2440 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5EF7FBC19E631FE00CC2440 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5EF7FC319E631FE00CC2440;
+			remoteInfo = StudySwiftPDF;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C5EF7FC419E631FE00CC2440 /* StudySwiftPDF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudySwiftPDF.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5EF7FC819E631FE00CC2440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5EF7FC919E631FE00CC2440 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5EF7FCB19E631FE00CC2440 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C5EF7FCE19E631FE00CC2440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C5EF7FD019E631FE00CC2440 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C5EF7FD319E631FE00CC2440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C5EF7FD919E631FE00CC2440 /* StudySwiftPDFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudySwiftPDFTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5EF7FDE19E631FE00CC2440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5EF7FDF19E631FE00CC2440 /* StudySwiftPDFTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySwiftPDFTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5EF7FC119E631FE00CC2440 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5EF7FD619E631FE00CC2440 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5EF7FBB19E631FE00CC2440 = {
+			isa = PBXGroup;
+			children = (
+				C5EF7FC619E631FE00CC2440 /* StudySwiftPDF */,
+				C5EF7FDC19E631FE00CC2440 /* StudySwiftPDFTests */,
+				C5EF7FC519E631FE00CC2440 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5EF7FC519E631FE00CC2440 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5EF7FC419E631FE00CC2440 /* StudySwiftPDF.app */,
+				C5EF7FD919E631FE00CC2440 /* StudySwiftPDFTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5EF7FC619E631FE00CC2440 /* StudySwiftPDF */ = {
+			isa = PBXGroup;
+			children = (
+				C5EF7FC919E631FE00CC2440 /* AppDelegate.swift */,
+				C5EF7FCB19E631FE00CC2440 /* ViewController.swift */,
+				C5EF7FCD19E631FE00CC2440 /* Main.storyboard */,
+				C5EF7FD019E631FE00CC2440 /* Images.xcassets */,
+				C5EF7FD219E631FE00CC2440 /* LaunchScreen.xib */,
+				C5EF7FC719E631FE00CC2440 /* Supporting Files */,
+			);
+			path = StudySwiftPDF;
+			sourceTree = "<group>";
+		};
+		C5EF7FC719E631FE00CC2440 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5EF7FC819E631FE00CC2440 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C5EF7FDC19E631FE00CC2440 /* StudySwiftPDFTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5EF7FDF19E631FE00CC2440 /* StudySwiftPDFTests.swift */,
+				C5EF7FDD19E631FE00CC2440 /* Supporting Files */,
+			);
+			path = StudySwiftPDFTests;
+			sourceTree = "<group>";
+		};
+		C5EF7FDD19E631FE00CC2440 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5EF7FDE19E631FE00CC2440 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5EF7FC319E631FE00CC2440 /* StudySwiftPDF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5EF7FE319E631FE00CC2440 /* Build configuration list for PBXNativeTarget "StudySwiftPDF" */;
+			buildPhases = (
+				C5EF7FC019E631FE00CC2440 /* Sources */,
+				C5EF7FC119E631FE00CC2440 /* Frameworks */,
+				C5EF7FC219E631FE00CC2440 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StudySwiftPDF;
+			productName = StudySwiftPDF;
+			productReference = C5EF7FC419E631FE00CC2440 /* StudySwiftPDF.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C5EF7FD819E631FE00CC2440 /* StudySwiftPDFTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5EF7FE619E631FE00CC2440 /* Build configuration list for PBXNativeTarget "StudySwiftPDFTests" */;
+			buildPhases = (
+				C5EF7FD519E631FE00CC2440 /* Sources */,
+				C5EF7FD619E631FE00CC2440 /* Frameworks */,
+				C5EF7FD719E631FE00CC2440 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5EF7FDB19E631FE00CC2440 /* PBXTargetDependency */,
+			);
+			name = StudySwiftPDFTests;
+			productName = StudySwiftPDFTests;
+			productReference = C5EF7FD919E631FE00CC2440 /* StudySwiftPDFTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5EF7FBC19E631FE00CC2440 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = CB;
+				TargetAttributes = {
+					C5EF7FC319E631FE00CC2440 = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = DSDW88BH35;
+					};
+					C5EF7FD819E631FE00CC2440 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = C5EF7FC319E631FE00CC2440;
+					};
+				};
+			};
+			buildConfigurationList = C5EF7FBF19E631FE00CC2440 /* Build configuration list for PBXProject "StudySwiftPDF" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5EF7FBB19E631FE00CC2440;
+			productRefGroup = C5EF7FC519E631FE00CC2440 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5EF7FC319E631FE00CC2440 /* StudySwiftPDF */,
+				C5EF7FD819E631FE00CC2440 /* StudySwiftPDFTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5EF7FC219E631FE00CC2440 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5EF7FCF19E631FE00CC2440 /* Main.storyboard in Resources */,
+				C5EF7FD419E631FE00CC2440 /* LaunchScreen.xib in Resources */,
+				C5EF7FD119E631FE00CC2440 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5EF7FD719E631FE00CC2440 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5EF7FC019E631FE00CC2440 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5EF7FCC19E631FE00CC2440 /* ViewController.swift in Sources */,
+				C5EF7FCA19E631FE00CC2440 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5EF7FD519E631FE00CC2440 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5EF7FE019E631FE00CC2440 /* StudySwiftPDFTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5EF7FDB19E631FE00CC2440 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5EF7FC319E631FE00CC2440 /* StudySwiftPDF */;
+			targetProxy = C5EF7FDA19E631FE00CC2440 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C5EF7FCD19E631FE00CC2440 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5EF7FCE19E631FE00CC2440 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C5EF7FD219E631FE00CC2440 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5EF7FD319E631FE00CC2440 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5EF7FE119E631FE00CC2440 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C5EF7FE219E631FE00CC2440 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5EF7FE419E631FE00CC2440 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = StudySwiftPDF/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C5EF7FE519E631FE00CC2440 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = StudySwiftPDF/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C5EF7FE719E631FE00CC2440 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StudySwiftPDFTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StudySwiftPDF.app/StudySwiftPDF";
+			};
+			name = Debug;
+		};
+		C5EF7FE819E631FE00CC2440 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StudySwiftPDFTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StudySwiftPDF.app/StudySwiftPDF";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5EF7FBF19E631FE00CC2440 /* Build configuration list for PBXProject "StudySwiftPDF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5EF7FE119E631FE00CC2440 /* Debug */,
+				C5EF7FE219E631FE00CC2440 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5EF7FE319E631FE00CC2440 /* Build configuration list for PBXNativeTarget "StudySwiftPDF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5EF7FE419E631FE00CC2440 /* Debug */,
+				C5EF7FE519E631FE00CC2440 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5EF7FE619E631FE00CC2440 /* Build configuration list for PBXNativeTarget "StudySwiftPDFTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5EF7FE719E631FE00CC2440 /* Debug */,
+				C5EF7FE819E631FE00CC2440 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5EF7FBC19E631FE00CC2440 /* Project object */;
+}
