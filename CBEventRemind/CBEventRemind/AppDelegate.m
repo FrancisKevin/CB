@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "RemindDrinkingViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -15,8 +17,16 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     // Override point for customization after application launch.
+    /*
+    RemindDrinkingViewController *remind = [[RemindDrinkingViewController alloc] initWithNibName:@"RemindDrinkingViewController" bundle:nil];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = remind;
+    [self.window makeKeyAndVisible];
+    */
     return YES;
 }
 
