@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "RemindDrinkingViewController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -27,6 +28,14 @@
     self.window.rootViewController = remind;
     [self.window makeKeyAndVisible];
     */
+    
+    UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    ViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"ViewController"];;
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

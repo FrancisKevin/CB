@@ -20,8 +20,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    [self.swi setOn:NO animated:YES];
+    [self.swi setOn:[NSUserDefaults getBoolForKey:KUDDrinkWaterRemind] animated:YES];
     [self switchDrink:self.swi];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,6 +52,8 @@
         
         [self cancelAllNotification];
     }
+    
+    [NSUserDefaults setBoolForKey:KUDDrinkWaterRemind value:swi.on];// 保存开关状态
     
     [self checkAllNotification];
 }

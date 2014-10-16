@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 CB. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "SuperViewController.h"
 
-@interface RemindDrinkingViewController : UIViewController
+@interface RemindDrinkingViewController : SuperViewController
 
 @property (strong, nonatomic) IBOutlet UILabel *lblDrink;
 @property (strong, nonatomic) IBOutlet UISwitch *swi;

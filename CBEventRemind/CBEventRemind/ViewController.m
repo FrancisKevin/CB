@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "RemindDrinkingViewController.h"
+
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 {
     UITableView *_tbList;
@@ -23,6 +25,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.title = @"爱提醒";
     
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"DrinkWater" ofType:@"json"];
     NSData *jsonData = [[NSData alloc] initWithContentsOfFile:filePath];
@@ -99,6 +103,17 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if (0 == indexPath.row)
+    {
+        RemindDrinkingViewController *vc = [[RemindDrinkingViewController alloc] initWithNibName:@"RemindDrinkingViewController" bundle:nil];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    else if (_arrList.count-1 == indexPath.row)
+    {
+        
+    }
+    
 }
 
 @end

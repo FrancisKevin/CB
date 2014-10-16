@@ -11,6 +11,8 @@
 		C51B639419EF69500052302F /* RemindDrinkingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C51B639219EF69500052302F /* RemindDrinkingViewController.xib */; };
 		C51B63CA19EFA2370052302F /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C51B63C919EFA2370052302F /* CoreDataManager.m */; };
 		C51B63D019EFAD210052302F /* DrinkWater.json in Resources */ = {isa = PBXBuildFile; fileRef = C51B63CE19EFAD210052302F /* DrinkWater.json */; };
+		C51B63D419EFB66B0052302F /* SuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C51B63D319EFB66B0052302F /* SuperViewController.m */; };
+		C51B63DA19EFC1670052302F /* NSUserDefaults+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = C51B63D919EFC1670052302F /* NSUserDefaults+Util.m */; };
 		C525EEA519EE76E10086A2BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C525EEA419EE76E10086A2BA /* main.m */; };
 		C525EEA819EE76E10086A2BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C525EEA719EE76E10086A2BA /* AppDelegate.m */; };
 		C525EEAB19EE76E10086A2BA /* CBEventRemind.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C525EEA919EE76E10086A2BA /* CBEventRemind.xcdatamodeld */; };
@@ -40,6 +42,10 @@
 		C51B63C819EFA2370052302F /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
 		C51B63C919EFA2370052302F /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
 		C51B63CE19EFAD210052302F /* DrinkWater.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DrinkWater.json; sourceTree = "<group>"; };
+		C51B63D219EFB66B0052302F /* SuperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperViewController.h; sourceTree = "<group>"; };
+		C51B63D319EFB66B0052302F /* SuperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperViewController.m; sourceTree = "<group>"; };
+		C51B63D819EFC1670052302F /* NSUserDefaults+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Util.h"; sourceTree = "<group>"; };
+		C51B63D919EFC1670052302F /* NSUserDefaults+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Util.m"; sourceTree = "<group>"; };
 		C525EE9F19EE76E10086A2BA /* 爱提醒.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "爱提醒.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C525EEA319EE76E10086A2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C525EEA419EE76E10086A2BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -88,6 +94,8 @@
 				C51B639019EF69500052302F /* RemindDrinkingViewController.h */,
 				C51B639119EF69500052302F /* RemindDrinkingViewController.m */,
 				C51B639219EF69500052302F /* RemindDrinkingViewController.xib */,
+				C51B63D219EFB66B0052302F /* SuperViewController.h */,
+				C51B63D319EFB66B0052302F /* SuperViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -107,6 +115,15 @@
 				C51B63CE19EFAD210052302F /* DrinkWater.json */,
 			);
 			path = CommonRemind;
+			sourceTree = "<group>";
+		};
+		C51B63D719EFC0410052302F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C51B63D819EFC1670052302F /* NSUserDefaults+Util.h */,
+				C51B63D919EFC1670052302F /* NSUserDefaults+Util.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		C525EE9619EE76E10086A2BA = {
@@ -130,6 +147,7 @@
 		C525EEA119EE76E10086A2BA /* CBEventRemind */ = {
 			isa = PBXGroup;
 			children = (
+				C51B63D719EFC0410052302F /* Category */,
 				C51B63CB19EFAC6B0052302F /* CommonRemind */,
 				C51B63C719EFA21C0052302F /* CoreData */,
 				C525EEA619EE76E10086A2BA /* AppDelegate.h */,
@@ -276,6 +294,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C51B63D419EFB66B0052302F /* SuperViewController.m in Sources */,
+				C51B63DA19EFC1670052302F /* NSUserDefaults+Util.m in Sources */,
 				C51B63CA19EFA2370052302F /* CoreDataManager.m in Sources */,
 				C525EEAB19EE76E10086A2BA /* CBEventRemind.xcdatamodeld in Sources */,
 				C525EEA819EE76E10086A2BA /* AppDelegate.m in Sources */,
