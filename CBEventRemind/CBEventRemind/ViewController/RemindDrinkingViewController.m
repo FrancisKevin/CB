@@ -8,7 +8,11 @@
 
 #import "RemindDrinkingViewController.h"
 
-@interface RemindDrinkingViewController ()
+@interface RemindDrinkingViewController () <UITableViewDataSource, UITableViewDelegate>
+{
+    UITableView *_tbList;
+    NSArray *_arrList;
+}
 
 @end
 
@@ -20,14 +24,25 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    [self.swi setOn:[NSUserDefaults getBoolForKey:KUDDrinkWaterRemind] animated:YES];
-    [self switchDrink:self.swi];
+    [self initUI];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     
+    if (!_tbList)
+    {
+        CGFloat tbY = CGRectGetMaxY(self.lblDrink.frame)+10;
+        CGRect tbRect = CGRectMake(0, tbY, KScreenWidth, KScreenheight-tbY);
+        _tbList = [[UITableView alloc] initWithFrame:tbRect];
+        _tbList.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+        _tbList.dataSource = self;
+        _tbList.delegate = self;
+        [self.view addSubview:_tbList];
+        
+        [self switchDrink:self.swi];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,19 +51,72 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - InitUI
+- (void)initUI
+{
+    [self.swi setOn:[NSUserDefaults getBoolForKey:KUDDrinkWaterRemind] animated:YES];
+    [self setLabelDrink:self.swi.on];
+}
+
+- (void)setLabelDrink:(BOOL)isOn
+{
+    if (isOn)
+    {
+        self.lblDrink.textColor = [UIColor blackColor];
+    }
+    else
+    {
+        self.lblDrink.textColor = [UIColor grayColor];
+    }
+}
+
+#pragma mark - UITableViewDataSource
+// 分组
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+// 行
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return _arrList.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *cellIdentifier = @"remindTimeCell";
+    
+    UITableViewCell *cell = [_tbList dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell == nil)
+    {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier] ;
+    }
+    
+    NSString *content = [_arrList objectAtIndex:indexPath.row];
+    cell.textLabel.text = content;
+    
+    return cell;
+}
+
 #pragma mark - ButtonAction
 - (IBAction)switchDrink:(id)sender
 {
     UISwitch *swi = (UISwitch *)sender;
     if (swi.on)
     {
-        self.lblDrink.textColor = [UIColor blackColor];
+        NSArray *arrayTime = [self.remindDict objectForKey:@"fire_time"];
+        _arrList = [[NSArray alloc] initWithArray:arrayTime];
+        _tbList.hidden = NO;
+        [_tbList reloadData];
         
-        [self addDrinkForEverydayRemind];
+        [self addDrinkForEverydayRemind:arrayTime];
     }
     else
     {
-        self.lblDrink.textColor = [UIColor grayColor];
+        _arrList = [[NSArray alloc] init];
+        _tbList.hidden = YES;
+        [_tbList reloadData];
         
         [self cancelAllNotification];
     }
@@ -58,9 +126,12 @@
     [self checkAllNotification];
 }
 
-- (void)addDrinkForEverydayRemind
+#pragma mark - 日程提醒操作
+- (void)addDrinkForEverydayRemind:(NSArray *)arrayTime
 {
-    NSArray *arrayTime = [[NSArray alloc] initWithObjects:@"08:00:00", @"09:00:00", @"11:10:00", @"13:50:00", @"15:10:00", @"17:10:00", @"19:30:00", @"21:15:00",nil];
+    [self cancelAllNotification];
+    
+//    NSArray *arrayTime = [[NSArray alloc] initWithObjects:@"08:00:00", @"09:00:00", @"11:10:00", @"13:50:00", @"15:10:00", @"17:10:00", @"19:30:00", @"21:15:00",nil];
     
 //    NSArray *arrayTime = [[NSArray alloc] initWithObjects:@"14:33:30", @"14:33:33", @"14:33:36", @"14:33:39", @"14:33:42", @"14:33:45", @"14:33:48", @"14:33:51",nil];
     
@@ -154,5 +225,7 @@
         NSLog(@"\n\n提醒通知：%@\n：%@  %@", [ln description], ln.alertBody, ln.fireDate);
     }
 }
+
+#pragma mark - Custom Method
 
 @end

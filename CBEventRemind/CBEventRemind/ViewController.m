@@ -107,6 +107,8 @@
     if (0 == indexPath.row)
     {
         RemindDrinkingViewController *vc = [[RemindDrinkingViewController alloc] initWithNibName:@"RemindDrinkingViewController" bundle:nil];
+        NSDictionary *dict = [_arrList objectAtIndex:indexPath.row];
+        vc.remindDict = dict;
         [self.navigationController pushViewController:vc animated:YES];
     }
     else if (_arrList.count-1 == indexPath.row)

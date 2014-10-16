@@ -10,6 +10,8 @@
 
 @interface RemindDrinkingViewController : SuperViewController
 
+@property (strong, nonatomic) NSDictionary *remindDict;
+
 @property (strong, nonatomic) IBOutlet UILabel *lblDrink;
 @property (strong, nonatomic) IBOutlet UISwitch *swi;
 
