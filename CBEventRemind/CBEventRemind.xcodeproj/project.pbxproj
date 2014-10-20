@@ -147,12 +147,12 @@
 		C525EEA119EE76E10086A2BA /* CBEventRemind */ = {
 			isa = PBXGroup;
 			children = (
-				C51B63D719EFC0410052302F /* Category */,
-				C51B63CB19EFAC6B0052302F /* CommonRemind */,
-				C51B63C719EFA21C0052302F /* CoreData */,
 				C525EEA619EE76E10086A2BA /* AppDelegate.h */,
 				C525EEA719EE76E10086A2BA /* AppDelegate.m */,
+				C51B63D719EFC0410052302F /* Category */,
 				C525EEA919EE76E10086A2BA /* CBEventRemind.xcdatamodeld */,
+				C51B63CB19EFAC6B0052302F /* CommonRemind */,
+				C51B63C719EFA21C0052302F /* CoreData */,
 				C525EEB219EE76E20086A2BA /* Images.xcassets */,
 				C525EEB419EE76E20086A2BA /* LaunchScreen.xib */,
 				C51B638C19EF64980052302F /* Macro */,

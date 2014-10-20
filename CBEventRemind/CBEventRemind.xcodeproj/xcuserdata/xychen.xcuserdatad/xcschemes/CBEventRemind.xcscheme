@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C525EE9E19EE76E10086A2BA"
-               BuildableName = "CBEventRemind.app"
+               BuildableName = "&#x7231;&#x63d0;&#x9192;.app"
                BlueprintName = "CBEventRemind"
                ReferencedContainer = "container:CBEventRemind.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C525EE9E19EE76E10086A2BA"
-            BuildableName = "CBEventRemind.app"
+            BuildableName = "&#x7231;&#x63d0;&#x9192;.app"
             BlueprintName = "CBEventRemind"
             ReferencedContainer = "container:CBEventRemind.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C525EE9E19EE76E10086A2BA"
-            BuildableName = "CBEventRemind.app"
+            BuildableName = "&#x7231;&#x63d0;&#x9192;.app"
             BlueprintName = "CBEventRemind"
             ReferencedContainer = "container:CBEventRemind.xcodeproj">
          </BuildableReference>
@@ -94,7 +94,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C525EE9E19EE76E10086A2BA"
-            BuildableName = "CBEventRemind.app"
+            BuildableName = "&#x7231;&#x63d0;&#x9192;.app"
             BlueprintName = "CBEventRemind"
             ReferencedContainer = "container:CBEventRemind.xcodeproj">
          </BuildableReference>

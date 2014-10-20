@@ -36,6 +36,13 @@
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
+    // 设置桌面图标气泡
+    [application setApplicationIconBadgeNumber:0];
+    [application registerForRemoteNotificationTypes:
+     UIRemoteNotificationTypeAlert
+     | UIRemoteNotificationTypeBadge
+     | UIRemoteNotificationTypeSound];
+    
     return YES;
 }
 
