@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 
-#import "RemindDrinkingViewController.h"
 #import "ViewController.h"
 
 @interface AppDelegate ()
@@ -21,16 +20,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    /*
-    RemindDrinkingViewController *remind = [[RemindDrinkingViewController alloc] initWithNibName:@"RemindDrinkingViewController" bundle:nil];
-    
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = remind;
-    [self.window makeKeyAndVisible];
-    */
     
     UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    ViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"ViewController"];;
+    ViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"ViewController"];
+    
+//    NavViewController *nav = [[NavViewController alloc] initWithRootViewController:vc];
+    
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = nav;
@@ -62,6 +57,9 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    // 设置桌面图标气泡
+    [application setApplicationIconBadgeNumber:0];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

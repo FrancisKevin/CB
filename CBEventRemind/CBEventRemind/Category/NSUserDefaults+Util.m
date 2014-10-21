@@ -79,4 +79,21 @@
     }
 }
 
+/*!通过 remindID 获取开关状态
+ */
++(BOOL)getSwitchRemindWithID:(NSString *)remindID
+{
+    NSString *key = [NSString stringWithFormat:@"SwitchRemind%@", remindID];
+    BOOL value = [self getBoolForKey:key];
+    return value;
+}
+
+/*!通过 remindID 存开关状态
+ */
++(void)setSwitchRemindWithID:(NSString *)remindID value:(BOOL)value
+{
+    NSString *key = [NSString stringWithFormat:@"SwitchRemind%@", remindID];
+    [self setBoolForKey:key value:value];
+}
+
 @end

@@ -15,4 +15,6 @@
 
 #import "NSUserDefaults+Util.h"
 
+#import "EventRemind.h"
+
 #endif

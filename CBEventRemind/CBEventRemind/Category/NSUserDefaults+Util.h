@@ -28,4 +28,12 @@
  */
 +(void)setBoolForKey:(NSString *)key value:(BOOL)value;
 
+/*!通过 remindID 获取开关状态
+ */
++(BOOL)getSwitchRemindWithID:(NSString *)remindID;
+
+/*!通过 remindID 存开关状态
+ */
++(void)setSwitchRemindWithID:(NSString *)remindID value:(BOOL)value;
+
 @end

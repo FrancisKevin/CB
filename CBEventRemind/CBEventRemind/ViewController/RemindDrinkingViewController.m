@@ -123,7 +123,9 @@
     
     [NSUserDefaults setBoolForKey:KUDDrinkWaterRemind value:swi.on];// 保存开关状态
     
-    [self checkAllNotification];
+    [self setLabelDrink:swi.on];
+    
+//    [self checkAllNotification];
 }
 
 #pragma mark - 日程提醒操作

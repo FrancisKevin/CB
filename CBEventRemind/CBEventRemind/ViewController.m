@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 #import "RemindDrinkingViewController.h"
+#import "EverydayRemindViewController.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 {
@@ -104,6 +105,7 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    /*
     if (0 == indexPath.row)
     {
         RemindDrinkingViewController *vc = [[RemindDrinkingViewController alloc] initWithNibName:@"RemindDrinkingViewController" bundle:nil];
@@ -111,11 +113,20 @@
         vc.remindDict = dict;
         [self.navigationController pushViewController:vc animated:YES];
     }
-    else if (_arrList.count-1 == indexPath.row)
+    else 
+     */
+    
+    if (_arrList.count-1 == indexPath.row)
     {
         
     }
-    
+    else
+    {
+        EverydayRemindViewController *vc = [[EverydayRemindViewController alloc] initWithNibName:@"EverydayRemindViewController" bundle:nil];
+        NSDictionary *dict = [_arrList objectAtIndex:indexPath.row];
+        vc.remindDict = dict;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 @end
