@@ -111,6 +111,10 @@
     {
         vc = [self initViewControllerWithName:@"AnimationViewController" title:@"视图动画"];
     }
+    else if (3 == row)
+    {
+        vc = [self initViewControllerWithName:@"DatePickerViewController" title:@"日期选择器"];
+    }
     
     if (vc)
     {
