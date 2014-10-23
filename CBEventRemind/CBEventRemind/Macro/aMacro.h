@@ -13,8 +13,11 @@
 #define KScreenWidth [[UIScreen mainScreen] bounds].size.width
 #define KScreenheight [[UIScreen mainScreen] bounds].size.height
 
+#pragma mark - Category
 #import "NSUserDefaults+Util.h"
+#import "NSString+Util.h"
 
+#pragma mark - Common
 #import "EventRemind.h"
 
 #endif

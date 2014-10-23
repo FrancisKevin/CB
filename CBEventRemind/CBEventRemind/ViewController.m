@@ -10,6 +10,7 @@
 
 #import "RemindDrinkingViewController.h"
 #import "EverydayRemindViewController.h"
+#import "CustomRemindViewController.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 {
@@ -44,7 +45,7 @@
     
     if (!_tbList)
     {
-        CGRect tbRect = CGRectMake(0, 20, KScreenWidth, KScreenheight-20);
+        CGRect tbRect = CGRectMake(0, 64, KScreenWidth, KScreenheight-64);
         _tbList = [[UITableView alloc] initWithFrame:tbRect];
         _tbList.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
         _tbList.dataSource = self;
@@ -118,7 +119,10 @@
     
     if (_arrList.count-1 == indexPath.row)
     {
-        
+        /*
+        CustomRemindViewController *vc = [[CustomRemindViewController alloc] initWithNibName:@"CustomRemindViewController" bundle:nil];
+        [self.navigationController pushViewController:vc animated:YES];
+         */
     }
     else
     {
