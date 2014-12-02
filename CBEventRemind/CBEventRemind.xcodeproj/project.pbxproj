@@ -24,6 +24,7 @@
 		C525EEB319EE76E20086A2BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C525EEB219EE76E20086A2BA /* Images.xcassets */; };
 		C525EEB619EE76E20086A2BA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C525EEB419EE76E20086A2BA /* LaunchScreen.xib */; };
 		C525EEC219EE76E20086A2BA /* CBEventRemindTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C525EEC119EE76E20086A2BA /* CBEventRemindTests.m */; };
+		C57A595C1A2C527500BFD9A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C57A595B1A2C527500BFD9A5 /* InfoPlist.strings */; };
 		C5999F0719F8CD3D00619634 /* CustomRemindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5999F0519F8CD3D00619634 /* CustomRemindViewController.m */; };
 		C5999F0819F8CD3D00619634 /* CustomRemindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5999F0619F8CD3D00619634 /* CustomRemindViewController.xib */; };
 		C5999F0B19F8E39C00619634 /* NSString+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = C5999F0A19F8E39C00619634 /* NSString+Util.m */; };
@@ -57,7 +58,7 @@
 		C523BE9619F4D7F8009E1484 /* EverydayRemindViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EverydayRemindViewController.xib; sourceTree = "<group>"; };
 		C523BE9A19F4DF82009E1484 /* EventRemind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventRemind.h; sourceTree = "<group>"; };
 		C523BE9B19F4DF82009E1484 /* EventRemind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventRemind.m; sourceTree = "<group>"; };
-		C525EE9F19EE76E10086A2BA /* 爱提醒.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "爱提醒.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C525EE9F19EE76E10086A2BA /* CBEventRemind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBEventRemind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C525EEA319EE76E10086A2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C525EEA419EE76E10086A2BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C525EEA619EE76E10086A2BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 		C525EEBB19EE76E20086A2BA /* CBEventRemindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CBEventRemindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C525EEC019EE76E20086A2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C525EEC119EE76E20086A2BA /* CBEventRemindTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBEventRemindTests.m; sourceTree = "<group>"; };
+		C57A595B1A2C527500BFD9A5 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		C5999F0419F8CD3D00619634 /* CustomRemindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomRemindViewController.h; sourceTree = "<group>"; };
 		C5999F0519F8CD3D00619634 /* CustomRemindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomRemindViewController.m; sourceTree = "<group>"; };
 		C5999F0619F8CD3D00619634 /* CustomRemindViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomRemindViewController.xib; sourceTree = "<group>"; };
@@ -171,7 +173,7 @@
 		C525EEA019EE76E10086A2BA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C525EE9F19EE76E10086A2BA /* 爱提醒.app */,
+				C525EE9F19EE76E10086A2BA /* CBEventRemind.app */,
 				C525EEBB19EE76E20086A2BA /* CBEventRemindTests.xctest */,
 			);
 			name = Products;
@@ -205,6 +207,7 @@
 				C525EEA319EE76E10086A2BA /* Info.plist */,
 				C525EEA419EE76E10086A2BA /* main.m */,
 				C51B638E19EF66A90052302F /* CBEventRemind-Prefix.pch */,
+				C57A595B1A2C527500BFD9A5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -243,7 +246,7 @@
 			);
 			name = CBEventRemind;
 			productName = CBEventRemind;
-			productReference = C525EE9F19EE76E10086A2BA /* 爱提醒.app */;
+			productReference = C525EE9F19EE76E10086A2BA /* CBEventRemind.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C525EEBA19EE76E20086A2BA /* CBEventRemindTests */ = {
@@ -307,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C523BE9819F4D7F8009E1484 /* EverydayRemindViewController.xib in Resources */,
+				C57A595C1A2C527500BFD9A5 /* InfoPlist.strings in Resources */,
 				C525EEB119EE76E20086A2BA /* Main.storyboard in Resources */,
 				C525EEB619EE76E20086A2BA /* LaunchScreen.xib in Resources */,
 				C51B63D019EFAD210052302F /* DrinkWater.json in Resources */,
@@ -417,7 +421,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -452,7 +456,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -465,10 +469,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "CBEventRemind/CBEventRemind-Prefix.pch";
 				INFOPLIST_FILE = CBEventRemind/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_MODULE_NAME = CBEventRemind;
-				PRODUCT_NAME = "爱提醒";
+				PRODUCT_NAME = CBEventRemind;
 			};
 			name = Debug;
 		};
@@ -478,10 +482,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "CBEventRemind/CBEventRemind-Prefix.pch";
 				INFOPLIST_FILE = CBEventRemind/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_MODULE_NAME = CBEventRemind;
-				PRODUCT_NAME = "爱提醒";
+				PRODUCT_NAME = CBEventRemind;
 			};
 			name = Release;
 		};
