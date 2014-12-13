@@ -30,7 +30,7 @@
     
     NSString *imgPath = [[NSBundle mainBundle] pathForResource:@"ScheduleTypeCustom.png" ofType:nil];
     NSData *imgData = [NSData dataWithContentsOfFile:imgPath];
-    NSLog(@"数据长度：%ul", imgData.length);
+    NSLog(@"数据长度：%lul", (unsigned long)imgData.length);
     
     Byte *testByte = (Byte *)[imgData bytes];
     for(int i=0;i<[imgData length];i++)

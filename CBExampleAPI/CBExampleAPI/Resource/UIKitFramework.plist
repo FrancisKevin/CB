@@ -20,5 +20,11 @@
         <key>IsLevel2</key>
         <true/>
     </dict>
+    <dict>
+        <key>ClassName</key>
+        <string>UITextView</string>
+        <key>IsLevel2</key>
+        <true/>
+    </dict>
 </array>
 </plist>

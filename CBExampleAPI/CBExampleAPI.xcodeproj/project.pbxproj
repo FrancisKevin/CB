@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		070C59421A3C38D000C9DD5B /* TextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 070C59401A3C38D000C9DD5B /* TextViewViewController.m */; };
+		070C59431A3C38D000C9DD5B /* TextViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 070C59411A3C38D000C9DD5B /* TextViewViewController.xib */; };
 		C5073C81195D646E00E75F4D /* CalendarDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5073C7F195D646E00E75F4D /* CalendarDemoViewController.m */; };
 		C5073C82195D646E00E75F4D /* CalendarDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5073C80195D646E00E75F4D /* CalendarDemoViewController.xib */; };
 		C50C7A3919512F4700107C71 /* ArrayAPI.plist in Resources */ = {isa = PBXBuildFile; fileRef = C50C7A3819512F4700107C71 /* ArrayAPI.plist */; };
@@ -59,6 +61,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		070C593F1A3C38D000C9DD5B /* TextViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewViewController.h; sourceTree = "<group>"; };
+		070C59401A3C38D000C9DD5B /* TextViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewViewController.m; sourceTree = "<group>"; };
+		070C59411A3C38D000C9DD5B /* TextViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewViewController.xib; sourceTree = "<group>"; };
 		C5073C7E195D646E00E75F4D /* CalendarDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarDemoViewController.h; sourceTree = "<group>"; };
 		C5073C7F195D646E00E75F4D /* CalendarDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarDemoViewController.m; sourceTree = "<group>"; };
 		C5073C80195D646E00E75F4D /* CalendarDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarDemoViewController.xib; sourceTree = "<group>"; };
@@ -141,6 +146,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		070C593E1A3C387C00C9DD5B /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				070C593F1A3C38D000C9DD5B /* TextViewViewController.h */,
+				070C59401A3C38D000C9DD5B /* TextViewViewController.m */,
+				070C59411A3C38D000C9DD5B /* TextViewViewController.xib */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		C5073C7D195D644900E75F4D /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,26 +264,27 @@
 		C57596941950290600720542 /* CBExampleAPI */ = {
 			isa = PBXGroup;
 			children = (
-				C513410119F7577A0002A1E2 /* DatePicker */,
-				C5467A62197E0EB900B57807 /* Animation */,
+				070C593E1A3C387C00C9DD5B /* UIKit */,
 				C532A72F19779FBC00344630 /* ActivityIndicator */,
-				C532A729197770C300344630 /* Common */,
-				C5073C7D195D644900E75F4D /* Calendar */,
-				C50C7A401951957200107C71 /* OtherFoundationClass */,
-				C50C7A3A1951754600107C71 /* RichText */,
-				C57596CD1950494B00720542 /* BaseDataType */,
-				C57596CA195043FD00720542 /* Resource */,
-				C57596C8195038E100720542 /* Macro */,
+				C5467A62197E0EB900B57807 /* Animation */,
 				C575969D1950290600720542 /* AppDelegate.h */,
 				C575969E1950290600720542 /* AppDelegate.m */,
-				C57596A01950290600720542 /* Main.storyboard */,
-				C57596A31950290600720542 /* ViewController.h */,
-				C57596A41950290600720542 /* ViewController.m */,
-				C57596A61950290600720542 /* Images.xcassets */,
-				C57596951950290600720542 /* Supporting Files */,
+				C57596CD1950494B00720542 /* BaseDataType */,
+				C5073C7D195D644900E75F4D /* Calendar */,
+				C532A729197770C300344630 /* Common */,
+				C513410119F7577A0002A1E2 /* DatePicker */,
 				C57596C31950355D00720542 /* FirstViewController.h */,
 				C57596C41950355D00720542 /* FirstViewController.m */,
 				C57596C51950355D00720542 /* FirstViewController.xib */,
+				C57596A61950290600720542 /* Images.xcassets */,
+				C57596C8195038E100720542 /* Macro */,
+				C57596A01950290600720542 /* Main.storyboard */,
+				C50C7A401951957200107C71 /* OtherFoundationClass */,
+				C57596CA195043FD00720542 /* Resource */,
+				C50C7A3A1951754600107C71 /* RichText */,
+				C57596951950290600720542 /* Supporting Files */,
+				C57596A31950290600720542 /* ViewController.h */,
+				C57596A41950290600720542 /* ViewController.m */,
 			);
 			path = CBExampleAPI;
 			sourceTree = "<group>";
@@ -420,6 +436,7 @@
 				C5073C82195D646E00E75F4D /* CalendarDemoViewController.xib in Resources */,
 				C57596A71950290600720542 /* Images.xcassets in Resources */,
 				C513410619F757B70002A1E2 /* DatePickerViewController.xib in Resources */,
+				070C59431A3C38D000C9DD5B /* TextViewViewController.xib in Resources */,
 				C50C7A3919512F4700107C71 /* ArrayAPI.plist in Resources */,
 				C57596991950290600720542 /* InfoPlist.strings in Resources */,
 				C50C7A451951959000107C71 /* BundleViewController.xib in Resources */,
@@ -461,6 +478,7 @@
 				C5BDCDD31963F6CE00CB1034 /* DataViewController.m in Sources */,
 				C513410519F757B70002A1E2 /* DatePickerViewController.m in Sources */,
 				C5BDCDDB1963FF9600CB1034 /* DateFormatterViewController.m in Sources */,
+				070C59421A3C38D000C9DD5B /* TextViewViewController.m in Sources */,
 				C575969F1950290600720542 /* AppDelegate.m in Sources */,
 				C5073C81195D646E00E75F4D /* CalendarDemoViewController.m in Sources */,
 				C575969B1950290600720542 /* main.m in Sources */,

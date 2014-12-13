@@ -87,7 +87,7 @@
     cell.textLabel.textColor = [UIColor blackColor];
     NSInteger row = indexPath.row+1;
     NSDictionary *dict = [self.arrayAPI objectAtIndex:indexPath.row];
-    cell.textLabel.text = [NSString stringWithFormat:@"%d.%@", row, [dict objectForKey:@"Title"]];
+    cell.textLabel.text = [NSString stringWithFormat:@"%d.%@", (int)row, [dict objectForKey:@"Title"]];
     
     return cell;
 }
@@ -232,7 +232,7 @@ NSInteger sortFirstLetter(id obj1, id obj2, void *context)
     NSUInteger loc = 1;
     NSUInteger len = 3;
     NSArray *newArray = [array subarrayWithRange:NSMakeRange(loc, len)];
-    NSLog(@"\nOrigin:%@\n从索引第%d位截取%d个元素:%@", array, loc, len, newArray);
+    NSLog(@"\nOrigin:%@\n从索引第%d位截取%d个元素:%@", array, (int)loc, (int)len, newArray);
 }
 
 @end

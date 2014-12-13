@@ -83,7 +83,7 @@
     
     NSInteger row = indexPath.row+1;
     NSDictionary *dict = [self.arrayUIKit objectAtIndex:indexPath.row];
-    cell.textLabel.text = [NSString stringWithFormat:@"%d.%@", row, [dict objectForKey:@"ClassName"]];
+    cell.textLabel.text = [NSString stringWithFormat:@"%d.%@", (int)row, [dict objectForKey:@"ClassName"]];
     
     NSNumber *isLevel2 = [dict objectForKey:@"IsLevel2"];
     if ([isLevel2 boolValue])
@@ -114,6 +114,10 @@
     else if (3 == row)
     {
         vc = [self initViewControllerWithName:@"DatePickerViewController" title:@"日期选择器"];
+    }
+    else if (4 == row)
+    {
+        vc = [self initViewControllerWithName:@"TextViewViewController" title:@"多行文本框"];
     }
     
     if (vc)

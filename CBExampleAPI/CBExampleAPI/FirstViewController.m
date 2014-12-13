@@ -100,7 +100,7 @@
     
     NSInteger row = indexPath.row+1;
     NSDictionary *dict = [self.arrayFoundation objectAtIndex:indexPath.row];
-    cell.textLabel.text = [NSString stringWithFormat:@"%d.%@", row, [dict objectForKey:@"ClassName"]];
+    cell.textLabel.text = [NSString stringWithFormat:@"%d.%@", (int)row, [dict objectForKey:@"ClassName"]];
     
     NSNumber *isLevel2 = [dict objectForKey:@"IsLevel2"];
     if ([isLevel2 boolValue])

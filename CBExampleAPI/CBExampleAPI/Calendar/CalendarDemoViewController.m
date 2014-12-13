@@ -92,7 +92,7 @@
     [comp setDay:addDay];
     NSDate *today = [NSDate date];
     NSDate *dateAdd = [calendar1 dateByAddingComponents:comp toDate:today options:NSCalendarWrapComponents];
-    NSLog(@"\n现在是：%@\n%d天后是：%@", today, addDay, dateAdd);
+    NSLog(@"\n现在是：%@\n%d天后是：%@", today, (int)addDay, dateAdd);
     
     
     unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay;// 该设置意味着日期组件能够显示那些信息。现在设置了年月日，那么这个日期组件就能够获取到年月日的信息。
@@ -101,7 +101,7 @@
     NSInteger yearSpace = [comp year];
     NSInteger monthSpace = [comp month];
     NSInteger daySpace = [comp day];
-    NSLog(@"\n从%@到%@，相差%d年%d个月%d天", today, toDate, yearSpace, monthSpace, daySpace);
+    NSLog(@"\n从%@到%@，相差%d年%d个月%d天", today, toDate, (int)yearSpace, (int)monthSpace, (int)daySpace);
     
     
     //其他的API是10.9/IOS7可用，所以暂时不列举出来
