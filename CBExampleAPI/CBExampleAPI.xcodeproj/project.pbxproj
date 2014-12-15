@@ -43,6 +43,8 @@
 		C57596CC1950443200720542 /* FoundationFramework.plist in Resources */ = {isa = PBXBuildFile; fileRef = C57596CB1950443200720542 /* FoundationFramework.plist */; };
 		C57596D11950499400720542 /* ArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57596CF1950499400720542 /* ArrayViewController.m */; };
 		C57596D21950499400720542 /* ArrayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C57596D01950499400720542 /* ArrayViewController.xib */; };
+		C5BB62981A3EC5B20065FCE9 /* GestureRecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BB62961A3EC5B20065FCE9 /* GestureRecognizerViewController.m */; };
+		C5BB62991A3EC5B20065FCE9 /* GestureRecognizerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5BB62971A3EC5B20065FCE9 /* GestureRecognizerViewController.xib */; };
 		C5BDCDD31963F6CE00CB1034 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BDCDD11963F6CE00CB1034 /* DataViewController.m */; };
 		C5BDCDD41963F6CE00CB1034 /* DataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5BDCDD21963F6CE00CB1034 /* DataViewController.xib */; };
 		C5BDCDD71963F78600CB1034 /* ScheduleTypeCustom.png in Resources */ = {isa = PBXBuildFile; fileRef = C5BDCDD61963F78600CB1034 /* ScheduleTypeCustom.png */; };
@@ -113,6 +115,9 @@
 		C57596CE1950499400720542 /* ArrayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayViewController.h; sourceTree = "<group>"; };
 		C57596CF1950499400720542 /* ArrayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayViewController.m; sourceTree = "<group>"; };
 		C57596D01950499400720542 /* ArrayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArrayViewController.xib; sourceTree = "<group>"; };
+		C5BB62951A3EC5B20065FCE9 /* GestureRecognizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureRecognizerViewController.h; sourceTree = "<group>"; };
+		C5BB62961A3EC5B20065FCE9 /* GestureRecognizerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureRecognizerViewController.m; sourceTree = "<group>"; };
+		C5BB62971A3EC5B20065FCE9 /* GestureRecognizerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GestureRecognizerViewController.xib; sourceTree = "<group>"; };
 		C5BDCDD01963F6CE00CB1034 /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
 		C5BDCDD11963F6CE00CB1034 /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
 		C5BDCDD21963F6CE00CB1034 /* DataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataViewController.xib; sourceTree = "<group>"; };
@@ -152,6 +157,9 @@
 				070C593F1A3C38D000C9DD5B /* TextViewViewController.h */,
 				070C59401A3C38D000C9DD5B /* TextViewViewController.m */,
 				070C59411A3C38D000C9DD5B /* TextViewViewController.xib */,
+				C5BB62951A3EC5B20065FCE9 /* GestureRecognizerViewController.h */,
+				C5BB62961A3EC5B20065FCE9 /* GestureRecognizerViewController.m */,
+				C5BB62971A3EC5B20065FCE9 /* GestureRecognizerViewController.xib */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -442,6 +450,7 @@
 				C50C7A451951959000107C71 /* BundleViewController.xib in Resources */,
 				C57596A21950290600720542 /* Main.storyboard in Resources */,
 				C50C7A3F19517B5600107C71 /* AttributedStringViewController.xib in Resources */,
+				C5BB62991A3EC5B20065FCE9 /* GestureRecognizerViewController.xib in Resources */,
 				C532A72E1977729400344630 /* UIKitFramework.plist in Resources */,
 				C57596C71950355D00720542 /* FirstViewController.xib in Resources */,
 				C532A7341977B1E800344630 /* ActivityIndicatorViewController.xib in Resources */,
@@ -474,6 +483,7 @@
 				C57596D11950499400720542 /* ArrayViewController.m in Sources */,
 				C532A7331977B1E800344630 /* ActivityIndicatorViewController.m in Sources */,
 				C50C7A3E19517B5600107C71 /* AttributedStringViewController.m in Sources */,
+				C5BB62981A3EC5B20065FCE9 /* GestureRecognizerViewController.m in Sources */,
 				C50C7A441951959000107C71 /* BundleViewController.m in Sources */,
 				C5BDCDD31963F6CE00CB1034 /* DataViewController.m in Sources */,
 				C513410519F757B70002A1E2 /* DatePickerViewController.m in Sources */,

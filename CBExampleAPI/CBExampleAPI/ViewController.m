@@ -119,6 +119,10 @@
     {
         vc = [self initViewControllerWithName:@"TextViewViewController" title:@"多行文本框"];
     }
+    else if (5 == row)
+    {
+        vc = [self initViewControllerWithName:@"GestureRecognizerViewController" title:@"点击手势"];
+    }
     
     if (vc)
     {

@@ -26,5 +26,11 @@
         <key>IsLevel2</key>
         <true/>
     </dict>
+    <dict>
+        <key>ClassName</key>
+        <string>UIGestureRecognizer</string>
+        <key>IsLevel2</key>
+        <true/>
+    </dict>
 </array>
 </plist>
