@@ -10,4 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIButton *btnStart;
+@property (strong, nonatomic) IBOutlet UIButton *btnInvocation;
+@property (strong, nonatomic) IBOutlet UIButton *btnBlock;
+
 @end

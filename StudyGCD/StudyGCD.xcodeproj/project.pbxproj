@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C547E8BB1A43FA3E000ACC43 /* MyNonConcurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C547E8BA1A43FA3E000ACC43 /* MyNonConcurrentOperation.m */; };
+		C547E8BE1A4409D0000ACC43 /* MyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C547E8BD1A4409D0000ACC43 /* MyOperation.m */; };
 		C59657C41A426A9C00CDFAD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59657C31A426A9C00CDFAD2 /* Foundation.framework */; };
 		C59657C61A426A9C00CDFAD2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59657C51A426A9C00CDFAD2 /* CoreGraphics.framework */; };
 		C59657C81A426A9C00CDFAD2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59657C71A426A9C00CDFAD2 /* UIKit.framework */; };
@@ -34,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C547E8B91A43FA3E000ACC43 /* MyNonConcurrentOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNonConcurrentOperation.h; sourceTree = "<group>"; };
+		C547E8BA1A43FA3E000ACC43 /* MyNonConcurrentOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNonConcurrentOperation.m; sourceTree = "<group>"; };
+		C547E8BC1A4409D0000ACC43 /* MyOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOperation.h; sourceTree = "<group>"; };
+		C547E8BD1A4409D0000ACC43 /* MyOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOperation.m; sourceTree = "<group>"; };
 		C59657C01A426A9C00CDFAD2 /* StudyGCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyGCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59657C31A426A9C00CDFAD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C59657C51A426A9C00CDFAD2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +85,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C547E8B81A43F9E8000ACC43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C547E8B91A43FA3E000ACC43 /* MyNonConcurrentOperation.h */,
+				C547E8BA1A43FA3E000ACC43 /* MyNonConcurrentOperation.m */,
+				C547E8BC1A4409D0000ACC43 /* MyOperation.h */,
+				C547E8BD1A4409D0000ACC43 /* MyOperation.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C59657B71A426A9C00CDFAD2 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +129,7 @@
 		C59657C91A426A9C00CDFAD2 /* StudyGCD */ = {
 			isa = PBXGroup;
 			children = (
+				C547E8B81A43F9E8000ACC43 /* Model */,
 				C59657D21A426A9C00CDFAD2 /* AppDelegate.h */,
 				C59657D31A426A9C00CDFAD2 /* AppDelegate.m */,
 				C59657D51A426A9C00CDFAD2 /* Main.storyboard */,
@@ -251,6 +269,8 @@
 			files = (
 				C59657DA1A426A9C00CDFAD2 /* ViewController.m in Sources */,
 				C59657D41A426A9C00CDFAD2 /* AppDelegate.m in Sources */,
+				C547E8BB1A43FA3E000ACC43 /* MyNonConcurrentOperation.m in Sources */,
+				C547E8BE1A4409D0000ACC43 /* MyOperation.m in Sources */,
 				C59657D01A426A9C00CDFAD2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +476,7 @@
 				C59657F41A426A9C00CDFAD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C59657F51A426A9C00CDFAD2 /* Build configuration list for PBXNativeTarget "StudyGCDTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +485,7 @@
 				C59657F71A426A9C00CDFAD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
