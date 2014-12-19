@@ -123,6 +123,10 @@
     {
         vc = [self initViewControllerWithName:@"GestureRecognizerViewController" title:@"点击手势"];
     }
+    else if (6 == row)
+    {
+        vc = [self initViewControllerWithName:@"AutoresizingMaskViewController" title:@"子视图自适应父视图size"];
+    }
     
     if (vc)
     {

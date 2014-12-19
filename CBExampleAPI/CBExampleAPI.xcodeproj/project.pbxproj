@@ -24,6 +24,9 @@
 		C532A7341977B1E800344630 /* ActivityIndicatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C532A7321977B1E800344630 /* ActivityIndicatorViewController.xib */; };
 		C5467A66197E0EE900B57807 /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5467A64197E0EE900B57807 /* AnimationViewController.m */; };
 		C5467A67197E0EE900B57807 /* AnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5467A65197E0EE900B57807 /* AnimationViewController.xib */; };
+		C547E8B01A43C2AC000ACC43 /* AutoresizingMaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C547E8AE1A43C2AC000ACC43 /* AutoresizingMaskViewController.m */; };
+		C547E8B11A43C2AC000ACC43 /* AutoresizingMaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C547E8AF1A43C2AC000ACC43 /* AutoresizingMaskViewController.xib */; };
+		C547E8B71A43CB40000ACC43 /* taobao@2x.PNG in Resources */ = {isa = PBXBuildFile; fileRef = C547E8B61A43CB40000ACC43 /* taobao@2x.PNG */; };
 		C575968F1950290600720542 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C575968E1950290600720542 /* Foundation.framework */; };
 		C57596911950290600720542 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C57596901950290600720542 /* CoreGraphics.framework */; };
 		C57596931950290600720542 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C57596921950290600720542 /* UIKit.framework */; };
@@ -88,6 +91,10 @@
 		C5467A63197E0EE900B57807 /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
 		C5467A64197E0EE900B57807 /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
 		C5467A65197E0EE900B57807 /* AnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimationViewController.xib; sourceTree = "<group>"; };
+		C547E8AD1A43C2AC000ACC43 /* AutoresizingMaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoresizingMaskViewController.h; sourceTree = "<group>"; };
+		C547E8AE1A43C2AC000ACC43 /* AutoresizingMaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoresizingMaskViewController.m; sourceTree = "<group>"; };
+		C547E8AF1A43C2AC000ACC43 /* AutoresizingMaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoresizingMaskViewController.xib; sourceTree = "<group>"; };
+		C547E8B61A43CB40000ACC43 /* taobao@2x.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "taobao@2x.PNG"; sourceTree = "<group>"; };
 		C575968B1950290600720542 /* CBExampleAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBExampleAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C575968E1950290600720542 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C57596901950290600720542 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -160,6 +167,9 @@
 				C5BB62951A3EC5B20065FCE9 /* GestureRecognizerViewController.h */,
 				C5BB62961A3EC5B20065FCE9 /* GestureRecognizerViewController.m */,
 				C5BB62971A3EC5B20065FCE9 /* GestureRecognizerViewController.xib */,
+				C547E8AD1A43C2AC000ACC43 /* AutoresizingMaskViewController.h */,
+				C547E8AE1A43C2AC000ACC43 /* AutoresizingMaskViewController.m */,
+				C547E8AF1A43C2AC000ACC43 /* AutoresizingMaskViewController.xib */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -359,6 +369,7 @@
 		C5BDCDD51963F78600CB1034 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				C547E8B61A43CB40000ACC43 /* taobao@2x.PNG */,
 				C5BDCDD61963F78600CB1034 /* ScheduleTypeCustom.png */,
 			);
 			path = Image;
@@ -457,7 +468,9 @@
 				C5467A67197E0EE900B57807 /* AnimationViewController.xib in Resources */,
 				C5BDCDD41963F6CE00CB1034 /* DataViewController.xib in Resources */,
 				C57596CC1950443200720542 /* FoundationFramework.plist in Resources */,
+				C547E8B71A43CB40000ACC43 /* taobao@2x.PNG in Resources */,
 				C5BDCDDC1963FF9600CB1034 /* DateFormatterViewController.xib in Resources */,
+				C547E8B11A43C2AC000ACC43 /* AutoresizingMaskViewController.xib in Resources */,
 				C5BDCDD71963F78600CB1034 /* ScheduleTypeCustom.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,6 +493,7 @@
 				C532A72C1977710900344630 /* SuperCommon.m in Sources */,
 				C5467A66197E0EE900B57807 /* AnimationViewController.m in Sources */,
 				C57596A51950290600720542 /* ViewController.m in Sources */,
+				C547E8B01A43C2AC000ACC43 /* AutoresizingMaskViewController.m in Sources */,
 				C57596D11950499400720542 /* ArrayViewController.m in Sources */,
 				C532A7331977B1E800344630 /* ActivityIndicatorViewController.m in Sources */,
 				C50C7A3E19517B5600107C71 /* AttributedStringViewController.m in Sources */,
