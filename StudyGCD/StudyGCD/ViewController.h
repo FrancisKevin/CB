@@ -12,5 +12,6 @@
 
 @property (strong, nonatomic) IBOutlet UIButton *btnGCD;
 @property (strong, nonatomic) IBOutlet UIButton *btnThread;
+@property (strong, nonatomic) IBOutlet UIButton *btnOperation;
 
 @end

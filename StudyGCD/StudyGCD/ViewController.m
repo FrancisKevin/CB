@@ -10,6 +10,7 @@
 
 #import "GCDViewController.h"
 #import "ThreadViewController.h"
+#import "OperationViewController.h"
 
 @interface ViewController ()
 {
@@ -31,6 +32,9 @@
     
     [self.btnThread setTitle:@"NSThread相关内容" forState:UIControlStateNormal];
     [self.btnThread addTarget:self action:@selector(threadContentAction:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.btnOperation setTitle:@"NSOperation相关内容" forState:UIControlStateNormal];
+    [self.btnOperation addTarget:self action:@selector(operationAction:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,6 +55,12 @@
 {
     ThreadViewController *threadVC = [[ThreadViewController alloc] initWithNibName:@"ThreadViewController" bundle:nil];
     [self presentViewController:threadVC animated:YES completion:nil];
+}
+
+- (IBAction)operationAction:(id)sender
+{
+    OperationViewController *opVC = [[OperationViewController alloc] initWithNibName:@"OperationViewController" bundle:nil];
+    [self presentViewController:opVC animated:YES completion:nil];
 }
 
 @end
