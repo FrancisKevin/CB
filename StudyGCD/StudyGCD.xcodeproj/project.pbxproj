@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		C547E8BB1A43FA3E000ACC43 /* MyNonConcurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C547E8BA1A43FA3E000ACC43 /* MyNonConcurrentOperation.m */; };
 		C547E8BE1A4409D0000ACC43 /* MyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C547E8BD1A4409D0000ACC43 /* MyOperation.m */; };
+		C5782A701A480FC600263D58 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5782A6E1A480FC600263D58 /* GCDViewController.m */; };
+		C5782A711A480FC600263D58 /* GCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5782A6F1A480FC600263D58 /* GCDViewController.xib */; };
+		C5782A741A481E1F00263D58 /* SuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5782A731A481E1F00263D58 /* SuperViewController.m */; };
+		C5782A781A481F7D00263D58 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5782A761A481F7D00263D58 /* ThreadViewController.m */; };
+		C5782A791A481F7D00263D58 /* ThreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5782A771A481F7D00263D58 /* ThreadViewController.xib */; };
 		C59657C41A426A9C00CDFAD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59657C31A426A9C00CDFAD2 /* Foundation.framework */; };
 		C59657C61A426A9C00CDFAD2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59657C51A426A9C00CDFAD2 /* CoreGraphics.framework */; };
 		C59657C81A426A9C00CDFAD2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59657C71A426A9C00CDFAD2 /* UIKit.framework */; };
@@ -40,6 +45,14 @@
 		C547E8BA1A43FA3E000ACC43 /* MyNonConcurrentOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNonConcurrentOperation.m; sourceTree = "<group>"; };
 		C547E8BC1A4409D0000ACC43 /* MyOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOperation.h; sourceTree = "<group>"; };
 		C547E8BD1A4409D0000ACC43 /* MyOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOperation.m; sourceTree = "<group>"; };
+		C5782A6D1A480FC600263D58 /* GCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
+		C5782A6E1A480FC600263D58 /* GCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		C5782A6F1A480FC600263D58 /* GCDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCDViewController.xib; sourceTree = "<group>"; };
+		C5782A721A481E1F00263D58 /* SuperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperViewController.h; sourceTree = "<group>"; };
+		C5782A731A481E1F00263D58 /* SuperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperViewController.m; sourceTree = "<group>"; };
+		C5782A751A481F7D00263D58 /* ThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
+		C5782A761A481F7D00263D58 /* ThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
+		C5782A771A481F7D00263D58 /* ThreadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThreadViewController.xib; sourceTree = "<group>"; };
 		C59657C01A426A9C00CDFAD2 /* StudyGCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyGCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59657C31A426A9C00CDFAD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C59657C51A426A9C00CDFAD2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -137,6 +150,14 @@
 				C59657D91A426A9C00CDFAD2 /* ViewController.m */,
 				C59657DB1A426A9C00CDFAD2 /* Images.xcassets */,
 				C59657CA1A426A9C00CDFAD2 /* Supporting Files */,
+				C5782A6D1A480FC600263D58 /* GCDViewController.h */,
+				C5782A6E1A480FC600263D58 /* GCDViewController.m */,
+				C5782A6F1A480FC600263D58 /* GCDViewController.xib */,
+				C5782A721A481E1F00263D58 /* SuperViewController.h */,
+				C5782A731A481E1F00263D58 /* SuperViewController.m */,
+				C5782A751A481F7D00263D58 /* ThreadViewController.h */,
+				C5782A761A481F7D00263D58 /* ThreadViewController.m */,
+				C5782A771A481F7D00263D58 /* ThreadViewController.xib */,
 			);
 			path = StudyGCD;
 			sourceTree = "<group>";
@@ -249,6 +270,8 @@
 				C59657DC1A426A9C00CDFAD2 /* Images.xcassets in Resources */,
 				C59657CE1A426A9C00CDFAD2 /* InfoPlist.strings in Resources */,
 				C59657D71A426A9C00CDFAD2 /* Main.storyboard in Resources */,
+				C5782A711A480FC600263D58 /* GCDViewController.xib in Resources */,
+				C5782A791A481F7D00263D58 /* ThreadViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5782A781A481F7D00263D58 /* ThreadViewController.m in Sources */,
+				C5782A741A481E1F00263D58 /* SuperViewController.m in Sources */,
 				C59657DA1A426A9C00CDFAD2 /* ViewController.m in Sources */,
+				C5782A701A480FC600263D58 /* GCDViewController.m in Sources */,
 				C59657D41A426A9C00CDFAD2 /* AppDelegate.m in Sources */,
 				C547E8BB1A43FA3E000ACC43 /* MyNonConcurrentOperation.m in Sources */,
 				C547E8BE1A4409D0000ACC43 /* MyOperation.m in Sources */,
