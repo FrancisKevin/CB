@@ -75,10 +75,38 @@
 
 - (IBAction)createLoopObserverAction:(id)sender
 {
-    
+    [self threadMain];
 }
 
-
+- (void)threadMain
+{
+    /*
+    // 应用程序使用垃圾回收，因此不需要自动释放池
+    NSRunLoop *myRunLoop = [NSRunLoop currentRunLoop];
+    
+    // 创建一个run loop观察者并附加到run loop上
+    CFRunLoopObserverContext context = {0, (__bridge void *)(self), NULL, NULL, NULL};
+    CFRunLoopObserverRef observer = CFRunLoopObserverCreate(kCFAllocatorDefault, kCFRunLoopAllActivities, YES, 0, &myRunLoopObserver, &context);
+    
+    if (observer)
+    {
+        CFRunLoopRef cfLoop = [myRunLoop getCFRunLoop];
+        CFRunLoopAddObserver(cfLoop, observer, kCFRunLoopDefaultMode);
+    }
+    
+    // 创建并安排计时器
+    [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(doFireTimer:) userInfo:nil repeats:YES];
+    
+    NSInteger loopCount = 10;
+    
+    do
+    {
+        // 让计时器运行 run loop 10次
+        [myRunLoop runUntilDate:[NSDate dateWithTimeIntervalSinceNow:1]];
+    }
+    while (loopCount);
+     */
+}
 
 #pragma mark - Custom Method
 - (void)myThreadMainMethod:(id)obj
