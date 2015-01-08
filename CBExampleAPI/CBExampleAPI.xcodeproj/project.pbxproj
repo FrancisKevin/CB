@@ -27,6 +27,13 @@
 		C547E8B01A43C2AC000ACC43 /* AutoresizingMaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C547E8AE1A43C2AC000ACC43 /* AutoresizingMaskViewController.m */; };
 		C547E8B11A43C2AC000ACC43 /* AutoresizingMaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C547E8AF1A43C2AC000ACC43 /* AutoresizingMaskViewController.xib */; };
 		C547E8B71A43CB40000ACC43 /* taobao@2x.PNG in Resources */ = {isa = PBXBuildFile; fileRef = C547E8B61A43CB40000ACC43 /* taobao@2x.PNG */; };
+		C54ECBDA1A5E217500026AE4 /* AVFoundation.plist in Resources */ = {isa = PBXBuildFile; fileRef = C54ECBD91A5E217500026AE4 /* AVFoundation.plist */; };
+		C54ECBDE1A5E225D00026AE4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C54ECBDC1A5E225D00026AE4 /* SecondViewController.m */; };
+		C54ECBDF1A5E225D00026AE4 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C54ECBDD1A5E225D00026AE4 /* SecondViewController.xib */; };
+		C54ECBE41A5E248400026AE4 /* AudioPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C54ECBE21A5E248400026AE4 /* AudioPlayerViewController.m */; };
+		C54ECBE51A5E248400026AE4 /* AudioPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C54ECBE31A5E248400026AE4 /* AudioPlayerViewController.xib */; };
+		C54ECBE71A5E252F00026AE4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54ECBE61A5E252F00026AE4 /* AVFoundation.framework */; };
+		C54ECBEA1A5E285B00026AE4 /* 我们去探险吧.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C54ECBE91A5E285B00026AE4 /* 我们去探险吧.mp3 */; };
 		C575968F1950290600720542 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C575968E1950290600720542 /* Foundation.framework */; };
 		C57596911950290600720542 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C57596901950290600720542 /* CoreGraphics.framework */; };
 		C57596931950290600720542 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C57596921950290600720542 /* UIKit.framework */; };
@@ -95,6 +102,15 @@
 		C547E8AE1A43C2AC000ACC43 /* AutoresizingMaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoresizingMaskViewController.m; sourceTree = "<group>"; };
 		C547E8AF1A43C2AC000ACC43 /* AutoresizingMaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoresizingMaskViewController.xib; sourceTree = "<group>"; };
 		C547E8B61A43CB40000ACC43 /* taobao@2x.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "taobao@2x.PNG"; sourceTree = "<group>"; };
+		C54ECBD91A5E217500026AE4 /* AVFoundation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AVFoundation.plist; sourceTree = "<group>"; };
+		C54ECBDB1A5E225D00026AE4 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		C54ECBDC1A5E225D00026AE4 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		C54ECBDD1A5E225D00026AE4 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		C54ECBE11A5E248400026AE4 /* AudioPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayerViewController.h; sourceTree = "<group>"; };
+		C54ECBE21A5E248400026AE4 /* AudioPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayerViewController.m; sourceTree = "<group>"; };
+		C54ECBE31A5E248400026AE4 /* AudioPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioPlayerViewController.xib; sourceTree = "<group>"; };
+		C54ECBE61A5E252F00026AE4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C54ECBE91A5E285B00026AE4 /* 我们去探险吧.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "我们去探险吧.mp3"; sourceTree = "<group>"; };
 		C575968B1950290600720542 /* CBExampleAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBExampleAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C575968E1950290600720542 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C57596901950290600720542 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -139,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C54ECBE71A5E252F00026AE4 /* AVFoundation.framework in Frameworks */,
 				C57596911950290600720542 /* CoreGraphics.framework in Frameworks */,
 				C57596931950290600720542 /* UIKit.framework in Frameworks */,
 				C575968F1950290600720542 /* Foundation.framework in Frameworks */,
@@ -249,6 +266,25 @@
 			path = Animation;
 			sourceTree = "<group>";
 		};
+		C54ECBE01A5E245D00026AE4 /* AudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				C54ECBE81A5E285B00026AE4 /* MP3 */,
+				C54ECBE11A5E248400026AE4 /* AudioPlayerViewController.h */,
+				C54ECBE21A5E248400026AE4 /* AudioPlayerViewController.m */,
+				C54ECBE31A5E248400026AE4 /* AudioPlayerViewController.xib */,
+			);
+			path = AudioPlayer;
+			sourceTree = "<group>";
+		};
+		C54ECBE81A5E285B00026AE4 /* MP3 */ = {
+			isa = PBXGroup;
+			children = (
+				C54ECBE91A5E285B00026AE4 /* 我们去探险吧.mp3 */,
+			);
+			path = MP3;
+			sourceTree = "<group>";
+		};
 		C57596821950290500720542 = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +307,7 @@
 		C575968D1950290600720542 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C54ECBE61A5E252F00026AE4 /* AVFoundation.framework */,
 				C575968E1950290600720542 /* Foundation.framework */,
 				C57596901950290600720542 /* CoreGraphics.framework */,
 				C57596921950290600720542 /* UIKit.framework */,
@@ -282,7 +319,7 @@
 		C57596941950290600720542 /* CBExampleAPI */ = {
 			isa = PBXGroup;
 			children = (
-				070C593E1A3C387C00C9DD5B /* UIKit */,
+				C54ECBE01A5E245D00026AE4 /* AudioPlayer */,
 				C532A72F19779FBC00344630 /* ActivityIndicator */,
 				C5467A62197E0EB900B57807 /* Animation */,
 				C575969D1950290600720542 /* AppDelegate.h */,
@@ -300,7 +337,11 @@
 				C50C7A401951957200107C71 /* OtherFoundationClass */,
 				C57596CA195043FD00720542 /* Resource */,
 				C50C7A3A1951754600107C71 /* RichText */,
+				C54ECBDB1A5E225D00026AE4 /* SecondViewController.h */,
+				C54ECBDC1A5E225D00026AE4 /* SecondViewController.m */,
+				C54ECBDD1A5E225D00026AE4 /* SecondViewController.xib */,
 				C57596951950290600720542 /* Supporting Files */,
+				070C593E1A3C387C00C9DD5B /* UIKit */,
 				C57596A31950290600720542 /* ViewController.h */,
 				C57596A41950290600720542 /* ViewController.m */,
 			);
@@ -351,6 +392,7 @@
 				C57596CB1950443200720542 /* FoundationFramework.plist */,
 				C532A72D1977729400344630 /* UIKitFramework.plist */,
 				C50C7A3819512F4700107C71 /* ArrayAPI.plist */,
+				C54ECBD91A5E217500026AE4 /* AVFoundation.plist */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -451,18 +493,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C54ECBDF1A5E225D00026AE4 /* SecondViewController.xib in Resources */,
 				C57596D21950499400720542 /* ArrayViewController.xib in Resources */,
 				C5073C82195D646E00E75F4D /* CalendarDemoViewController.xib in Resources */,
 				C57596A71950290600720542 /* Images.xcassets in Resources */,
 				C513410619F757B70002A1E2 /* DatePickerViewController.xib in Resources */,
 				070C59431A3C38D000C9DD5B /* TextViewViewController.xib in Resources */,
+				C54ECBEA1A5E285B00026AE4 /* 我们去探险吧.mp3 in Resources */,
 				C50C7A3919512F4700107C71 /* ArrayAPI.plist in Resources */,
 				C57596991950290600720542 /* InfoPlist.strings in Resources */,
 				C50C7A451951959000107C71 /* BundleViewController.xib in Resources */,
 				C57596A21950290600720542 /* Main.storyboard in Resources */,
 				C50C7A3F19517B5600107C71 /* AttributedStringViewController.xib in Resources */,
 				C5BB62991A3EC5B20065FCE9 /* GestureRecognizerViewController.xib in Resources */,
+				C54ECBE51A5E248400026AE4 /* AudioPlayerViewController.xib in Resources */,
 				C532A72E1977729400344630 /* UIKitFramework.plist in Resources */,
+				C54ECBDA1A5E217500026AE4 /* AVFoundation.plist in Resources */,
 				C57596C71950355D00720542 /* FirstViewController.xib in Resources */,
 				C532A7341977B1E800344630 /* ActivityIndicatorViewController.xib in Resources */,
 				C5467A67197E0EE900B57807 /* AnimationViewController.xib in Resources */,
@@ -490,11 +536,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C54ECBDE1A5E225D00026AE4 /* SecondViewController.m in Sources */,
 				C532A72C1977710900344630 /* SuperCommon.m in Sources */,
 				C5467A66197E0EE900B57807 /* AnimationViewController.m in Sources */,
 				C57596A51950290600720542 /* ViewController.m in Sources */,
 				C547E8B01A43C2AC000ACC43 /* AutoresizingMaskViewController.m in Sources */,
 				C57596D11950499400720542 /* ArrayViewController.m in Sources */,
+				C54ECBE41A5E248400026AE4 /* AudioPlayerViewController.m in Sources */,
 				C532A7331977B1E800344630 /* ActivityIndicatorViewController.m in Sources */,
 				C50C7A3E19517B5600107C71 /* AttributedStringViewController.m in Sources */,
 				C5BB62981A3EC5B20065FCE9 /* GestureRecognizerViewController.m in Sources */,
