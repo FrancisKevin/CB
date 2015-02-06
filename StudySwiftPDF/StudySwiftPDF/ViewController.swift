@@ -189,6 +189,7 @@ class ViewController: UIViewController {
         println(test.area())
         println(test.simpleDescription())
         
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -338,6 +339,27 @@ class ViewController: UIViewController {
         override func simpleDescription() -> String
         {
             return "A shape with sides of length \(numberOfSides)."
+        }
+    }
+    
+    class EquilateralTriangle: NamedShape
+    {
+        var sideLength: Double = 0.0
+        
+        init(sideLength: Double, name: String)
+        {
+            self.sideLength = sideLength
+            super.init(name: name)
+            numberOfSides = 3
+        }
+        
+        var perimeter: Double {
+            get {
+                return 3.0 * sideLength
+            }
+            set {
+                sideLength = newValue
+            }
         }
     }
     
