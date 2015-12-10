@@ -6,13 +6,13 @@
 //  Copyright (c) 2014年 CB. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "FoundationViewController.h"
 
 #import "ArrayViewController.h"
 #import "AttributedStringViewController.h"
 #import "BundleViewController.h"
 
-@interface FirstViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface FoundationViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) NSArray *arrayFoundation;
 
@@ -20,7 +20,7 @@
 
 @end
 
-@implementation FirstViewController
+@implementation FoundationViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,17 +35,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-//    NSLog(@"\n%@\n%@", NSStringFromClass([FirstViewController class]), self.view);
     
     if (!_tbFoundationList)
     {
-        /*
-        self.arrayFoundation = @[@"FoundationErrors.h", @"NSArray.h", @"NSAttributedString.h", @"NSAutoreleasePool.h", @"NSBundle.h", @"NSByteCountFormatter.h", @"NSByteOrder.h", @"NSCache.h", @"NSCalendar.h", @"NSCharacterSet.h", @"NSCoder.h", @"NSComparisonPredicate.h", @"NSCompoundPredicate.h", @"NSData.h", @"NSDate.h", @"NSDateFormatter.h", @"NSDecimal.h", @"NSDecimalNumber.h", @"NSDictionary.h", @"NSEnumerator.h", @"NSError.h", @"NSException.h", @"NSExpression.h", @"NSFileCoordinator.h", @"NSFileHandle.h", @"NSFileManager.h", @"NSFilePresenter.h", @"NSFileVersion.h", @"NSFileWrapper.h", @"NSFormatter.h", @"NSHashTable.h", @"NSHTTPCookie.h", @"NSHTTPCookieStorage.h", @"NSIndexPath.h", @"NSIndexSet.h", @"NSInvocation.h", @"NSJSONSerialization.h", @"NSKeyedArchiver.h", @"NSKeyValueCoding.h", @"NSKeyValueObserving.h", @"NSLinguisticTagger.h", @"NSLocale.h", @"NSLock.h", @"NSMapTable.h", @"NSMetadata.h", @"NSMetadataAttributes.h", @"NSMethodSignature.h", @"NSNetServices.h", @"NSNotification.h", @"NSNotificationQueue.h", @"NSNull.h", @"NSNumberFormatter.h"];
-         */
-        
-//        NSArray *arr = @[@{@"ClassName": @"FoundationErrors.h", @"IsNextLevel": @"0"}];
-        
         self.arrayFoundation = [[NSArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"FoundationFramework.plist" ofType:nil]];
         
         CGFloat originY = 0;
@@ -54,7 +46,6 @@
         CGFloat height = 0;
         if (KIsIOS7)
         {
-//            navHeight = 0;
             originY = navHeight;
             tabHeight = 0;
             height = KAppHeight-navHeight-tabHeight+20;
@@ -139,7 +130,7 @@
     
     UIViewController *vc;
     
-    if (1 == row || 6 == row || 8 == row || 11 == row)
+    if (1 == row || 6 == row || 8 == row || 11 == row || 19 == row)
     {
         [SuperCommon showAlertTitle:nil message:@"暂时忽略该项"];
     }
@@ -185,7 +176,15 @@
     }
     else if (17 == row)
     {
-//        NSDecimal
+        [SuperCommon showAlertTitle:nil message:@"未知"];
+    }
+    else if (18 == row)
+    {
+        [SuperCommon showAlertTitle:nil message:@"用于科学计数法，使用较少，忽略"];
+    }
+    else if (20 == row)
+    {
+        vc = [self initViewControllerWithName:@"FileManagerViewController" title:@"FileManagerViewController"];
     }
     
     if (vc)

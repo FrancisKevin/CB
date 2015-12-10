@@ -1,35 +1,33 @@
 //
-//  ViewController.m
+//  SecondViewController.m
 //  CBExampleAPI
 //
-//  Created by xychen on 14-6-17.
-//  Copyright (c) 2014年 CB. All rights reserved.
+//  Created by xychen on 15-1-8.
+//  Copyright (c) 2015年 CB. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "AVFoundationViewController.h"
 
-@interface ViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface AVFoundationViewController () <UITableViewDataSource, UITableViewDelegate>
 
-@property (strong, nonatomic) NSArray *arrayUIKit;
+@property (strong, nonatomic) NSArray *arrayFoundation;
 
-@property (strong, nonatomic) UITableView *tbUIKitList;
+@property (strong, nonatomic) UITableView *tbFoundationList;
 
 @end
 
-@implementation ViewController
+@implementation AVFoundationViewController
 
+#pragma mark - Life Cycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view from its nib.
+    //    NSLog(@"\n%@\n%@", NSStringFromClass([FirstViewController class]), self.view);
     
-    NSLog(@"加载了%@", NSStringFromClass([ViewController class]));
-    
-    NSLog(@"执行[%@ %@]", NSStringFromClass([ViewController class]), NSStringFromSelector(_cmd));
-    
-    if (!_tbUIKitList)
-    {
-        self.arrayUIKit = [[NSArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"UIKitFramework.plist" ofType:nil]];
+    if (!_tbFoundationList)
+    {        
+        self.arrayFoundation = [[NSArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"AVFoundation.plist" ofType:nil]];
         
         CGFloat originY = 0;
         CGFloat navHeight = self.navigationController.navigationBar.frame.size.height;
@@ -47,12 +45,12 @@
             height = KAppHeight-originY-navHeight-tabHeight;
         }
         
-        _tbUIKitList = [[UITableView alloc] init];
-        _tbUIKitList.frame = CGRectMake(0, originY, KAppWidth, height);
-        [self.view addSubview:_tbUIKitList];
+        _tbFoundationList = [[UITableView alloc] init];
+        _tbFoundationList.frame = CGRectMake(0, originY, KAppWidth, height);
+        [self.view addSubview:_tbFoundationList];
         
-        _tbUIKitList.dataSource = self;
-        _tbUIKitList.delegate = self;
+        _tbFoundationList.dataSource = self;
+        _tbFoundationList.delegate = self;
     }
 }
 
@@ -65,7 +63,7 @@
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.arrayUIKit.count;
+    return self.arrayFoundation.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -82,7 +80,7 @@
     cell.textLabel.textColor = [UIColor blackColor];
     
     NSInteger row = indexPath.row+1;
-    NSDictionary *dict = [self.arrayUIKit objectAtIndex:indexPath.row];
+    NSDictionary *dict = [self.arrayFoundation objectAtIndex:indexPath.row];
     cell.textLabel.text = [NSString stringWithFormat:@"%d.%@", (int)row, [dict objectForKey:@"ClassName"]];
     
     NSNumber *isLevel2 = [dict objectForKey:@"IsLevel2"];
@@ -105,28 +103,9 @@
     
     if (1 == row)
     {
-        vc = [self initViewControllerWithName:@"ActivityIndicatorViewController" title:@"指示器"];
+        vc = [self initViewControllerWithName:@"AudioPlayerViewController" title:@"音频播放"];
     }
-    else if (2 == row)
-    {
-        vc = [self initViewControllerWithName:@"AnimationViewController" title:@"视图动画"];
-    }
-    else if (3 == row)
-    {
-        vc = [self initViewControllerWithName:@"DatePickerViewController" title:@"日期选择器"];
-    }
-    else if (4 == row)
-    {
-        vc = [self initViewControllerWithName:@"TextViewViewController" title:@"多行文本框"];
-    }
-    else if (5 == row)
-    {
-        vc = [self initViewControllerWithName:@"GestureRecognizerViewController" title:@"点击手势"];
-    }
-    else if (6 == row)
-    {
-        vc = [self initViewControllerWithName:@"AutoresizingMaskViewController" title:@"子视图自适应父视图size"];
-    }
+    
     
     if (vc)
     {

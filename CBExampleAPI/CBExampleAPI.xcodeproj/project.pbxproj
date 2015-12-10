@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		070C59421A3C38D000C9DD5B /* TextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 070C59401A3C38D000C9DD5B /* TextViewViewController.m */; };
 		070C59431A3C38D000C9DD5B /* TextViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 070C59411A3C38D000C9DD5B /* TextViewViewController.xib */; };
+		4580CB451B89DFC20012B61F /* FileManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4580CB431B89DFC20012B61F /* FileManagerViewController.m */; };
+		4580CB461B89DFC20012B61F /* FileManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4580CB441B89DFC20012B61F /* FileManagerViewController.xib */; };
+		45B27FF71C196E4A00732ADD /* UIImage+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B27FF61C196E4A00732ADD /* UIImage+Utils.m */; };
+		45B27FFE1C19770900732ADD /* ImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B27FFC1C19770900732ADD /* ImageController.m */; };
+		45B27FFF1C19770900732ADD /* ImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45B27FFD1C19770900732ADD /* ImageController.xib */; };
 		C5073C81195D646E00E75F4D /* CalendarDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5073C7F195D646E00E75F4D /* CalendarDemoViewController.m */; };
 		C5073C82195D646E00E75F4D /* CalendarDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5073C80195D646E00E75F4D /* CalendarDemoViewController.xib */; };
 		C50C7A3919512F4700107C71 /* ArrayAPI.plist in Resources */ = {isa = PBXBuildFile; fileRef = C50C7A3819512F4700107C71 /* ArrayAPI.plist */; };
@@ -28,8 +33,8 @@
 		C547E8B11A43C2AC000ACC43 /* AutoresizingMaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C547E8AF1A43C2AC000ACC43 /* AutoresizingMaskViewController.xib */; };
 		C547E8B71A43CB40000ACC43 /* taobao@2x.PNG in Resources */ = {isa = PBXBuildFile; fileRef = C547E8B61A43CB40000ACC43 /* taobao@2x.PNG */; };
 		C54ECBDA1A5E217500026AE4 /* AVFoundation.plist in Resources */ = {isa = PBXBuildFile; fileRef = C54ECBD91A5E217500026AE4 /* AVFoundation.plist */; };
-		C54ECBDE1A5E225D00026AE4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C54ECBDC1A5E225D00026AE4 /* SecondViewController.m */; };
-		C54ECBDF1A5E225D00026AE4 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C54ECBDD1A5E225D00026AE4 /* SecondViewController.xib */; };
+		C54ECBDE1A5E225D00026AE4 /* AVFoundationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C54ECBDC1A5E225D00026AE4 /* AVFoundationViewController.m */; };
+		C54ECBDF1A5E225D00026AE4 /* AVFoundationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C54ECBDD1A5E225D00026AE4 /* AVFoundationViewController.xib */; };
 		C54ECBE41A5E248400026AE4 /* AudioPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C54ECBE21A5E248400026AE4 /* AudioPlayerViewController.m */; };
 		C54ECBE51A5E248400026AE4 /* AudioPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C54ECBE31A5E248400026AE4 /* AudioPlayerViewController.xib */; };
 		C54ECBE71A5E252F00026AE4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54ECBE61A5E252F00026AE4 /* AVFoundation.framework */; };
@@ -41,15 +46,15 @@
 		C575969B1950290600720542 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C575969A1950290600720542 /* main.m */; };
 		C575969F1950290600720542 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C575969E1950290600720542 /* AppDelegate.m */; };
 		C57596A21950290600720542 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C57596A01950290600720542 /* Main.storyboard */; };
-		C57596A51950290600720542 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57596A41950290600720542 /* ViewController.m */; };
+		C57596A51950290600720542 /* UIKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57596A41950290600720542 /* UIKitViewController.m */; };
 		C57596A71950290600720542 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C57596A61950290600720542 /* Images.xcassets */; };
 		C57596AE1950290600720542 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C57596AD1950290600720542 /* XCTest.framework */; };
 		C57596AF1950290600720542 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C575968E1950290600720542 /* Foundation.framework */; };
 		C57596B01950290600720542 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C57596921950290600720542 /* UIKit.framework */; };
 		C57596B81950290600720542 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C57596B61950290600720542 /* InfoPlist.strings */; };
 		C57596BA1950290600720542 /* CBExampleAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C57596B91950290600720542 /* CBExampleAPITests.m */; };
-		C57596C61950355D00720542 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57596C41950355D00720542 /* FirstViewController.m */; };
-		C57596C71950355D00720542 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C57596C51950355D00720542 /* FirstViewController.xib */; };
+		C57596C61950355D00720542 /* FoundationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57596C41950355D00720542 /* FoundationViewController.m */; };
+		C57596C71950355D00720542 /* FoundationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C57596C51950355D00720542 /* FoundationViewController.xib */; };
 		C57596CC1950443200720542 /* FoundationFramework.plist in Resources */ = {isa = PBXBuildFile; fileRef = C57596CB1950443200720542 /* FoundationFramework.plist */; };
 		C57596D11950499400720542 /* ArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57596CF1950499400720542 /* ArrayViewController.m */; };
 		C57596D21950499400720542 /* ArrayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C57596D01950499400720542 /* ArrayViewController.xib */; };
@@ -76,6 +81,14 @@
 		070C593F1A3C38D000C9DD5B /* TextViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewViewController.h; sourceTree = "<group>"; };
 		070C59401A3C38D000C9DD5B /* TextViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewViewController.m; sourceTree = "<group>"; };
 		070C59411A3C38D000C9DD5B /* TextViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewViewController.xib; sourceTree = "<group>"; };
+		4580CB421B89DFC20012B61F /* FileManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManagerViewController.h; sourceTree = "<group>"; };
+		4580CB431B89DFC20012B61F /* FileManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManagerViewController.m; sourceTree = "<group>"; };
+		4580CB441B89DFC20012B61F /* FileManagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FileManagerViewController.xib; sourceTree = "<group>"; };
+		45B27FF51C196E4A00732ADD /* UIImage+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utils.h"; sourceTree = "<group>"; };
+		45B27FF61C196E4A00732ADD /* UIImage+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utils.m"; sourceTree = "<group>"; };
+		45B27FFB1C19770900732ADD /* ImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageController.h; sourceTree = "<group>"; };
+		45B27FFC1C19770900732ADD /* ImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageController.m; sourceTree = "<group>"; };
+		45B27FFD1C19770900732ADD /* ImageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageController.xib; sourceTree = "<group>"; };
 		C5073C7E195D646E00E75F4D /* CalendarDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarDemoViewController.h; sourceTree = "<group>"; };
 		C5073C7F195D646E00E75F4D /* CalendarDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarDemoViewController.m; sourceTree = "<group>"; };
 		C5073C80195D646E00E75F4D /* CalendarDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarDemoViewController.xib; sourceTree = "<group>"; };
@@ -103,9 +116,9 @@
 		C547E8AF1A43C2AC000ACC43 /* AutoresizingMaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoresizingMaskViewController.xib; sourceTree = "<group>"; };
 		C547E8B61A43CB40000ACC43 /* taobao@2x.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "taobao@2x.PNG"; sourceTree = "<group>"; };
 		C54ECBD91A5E217500026AE4 /* AVFoundation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AVFoundation.plist; sourceTree = "<group>"; };
-		C54ECBDB1A5E225D00026AE4 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		C54ECBDC1A5E225D00026AE4 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		C54ECBDD1A5E225D00026AE4 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		C54ECBDB1A5E225D00026AE4 /* AVFoundationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVFoundationViewController.h; sourceTree = "<group>"; };
+		C54ECBDC1A5E225D00026AE4 /* AVFoundationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVFoundationViewController.m; sourceTree = "<group>"; };
+		C54ECBDD1A5E225D00026AE4 /* AVFoundationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVFoundationViewController.xib; sourceTree = "<group>"; };
 		C54ECBE11A5E248400026AE4 /* AudioPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayerViewController.h; sourceTree = "<group>"; };
 		C54ECBE21A5E248400026AE4 /* AudioPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayerViewController.m; sourceTree = "<group>"; };
 		C54ECBE31A5E248400026AE4 /* AudioPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioPlayerViewController.xib; sourceTree = "<group>"; };
@@ -122,17 +135,17 @@
 		C575969D1950290600720542 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C575969E1950290600720542 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C57596A11950290600720542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C57596A31950290600720542 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C57596A41950290600720542 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C57596A31950290600720542 /* UIKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIKitViewController.h; sourceTree = "<group>"; };
+		C57596A41950290600720542 /* UIKitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIKitViewController.m; sourceTree = "<group>"; };
 		C57596A61950290600720542 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C57596AC1950290600720542 /* CBExampleAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CBExampleAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57596AD1950290600720542 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C57596B51950290600720542 /* CBExampleAPITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CBExampleAPITests-Info.plist"; sourceTree = "<group>"; };
 		C57596B71950290600720542 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C57596B91950290600720542 /* CBExampleAPITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBExampleAPITests.m; sourceTree = "<group>"; };
-		C57596C31950355D00720542 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		C57596C41950355D00720542 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		C57596C51950355D00720542 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		C57596C31950355D00720542 /* FoundationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundationViewController.h; sourceTree = "<group>"; };
+		C57596C41950355D00720542 /* FoundationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundationViewController.m; sourceTree = "<group>"; };
+		C57596C51950355D00720542 /* FoundationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoundationViewController.xib; sourceTree = "<group>"; };
 		C57596C91950391E00720542 /* CBExampleAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBExampleAPI.h; sourceTree = "<group>"; };
 		C57596CB1950443200720542 /* FoundationFramework.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FoundationFramework.plist; sourceTree = "<group>"; };
 		C57596CE1950499400720542 /* ArrayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayViewController.h; sourceTree = "<group>"; };
@@ -187,8 +200,20 @@
 				C547E8AD1A43C2AC000ACC43 /* AutoresizingMaskViewController.h */,
 				C547E8AE1A43C2AC000ACC43 /* AutoresizingMaskViewController.m */,
 				C547E8AF1A43C2AC000ACC43 /* AutoresizingMaskViewController.xib */,
+				45B27FFB1C19770900732ADD /* ImageController.h */,
+				45B27FFC1C19770900732ADD /* ImageController.m */,
+				45B27FFD1C19770900732ADD /* ImageController.xib */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		45B27FF41C196E1600732ADD /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				45B27FF51C196E4A00732ADD /* UIImage+Utils.h */,
+				45B27FF61C196E4A00732ADD /* UIImage+Utils.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		C5073C7D195D644900E75F4D /* Calendar */ = {
@@ -223,6 +248,9 @@
 				C5BDCDD81963FF9600CB1034 /* DateFormatterViewController.h */,
 				C5BDCDD91963FF9600CB1034 /* DateFormatterViewController.m */,
 				C5BDCDDA1963FF9600CB1034 /* DateFormatterViewController.xib */,
+				4580CB421B89DFC20012B61F /* FileManagerViewController.h */,
+				4580CB431B89DFC20012B61F /* FileManagerViewController.m */,
+				4580CB441B89DFC20012B61F /* FileManagerViewController.xib */,
 			);
 			path = OtherFoundationClass;
 			sourceTree = "<group>";
@@ -319,31 +347,32 @@
 		C57596941950290600720542 /* CBExampleAPI */ = {
 			isa = PBXGroup;
 			children = (
-				C54ECBE01A5E245D00026AE4 /* AudioPlayer */,
+				45B27FF41C196E1600732ADD /* Category */,
 				C532A72F19779FBC00344630 /* ActivityIndicator */,
 				C5467A62197E0EB900B57807 /* Animation */,
 				C575969D1950290600720542 /* AppDelegate.h */,
 				C575969E1950290600720542 /* AppDelegate.m */,
+				C54ECBE01A5E245D00026AE4 /* AudioPlayer */,
+				C54ECBDB1A5E225D00026AE4 /* AVFoundationViewController.h */,
+				C54ECBDC1A5E225D00026AE4 /* AVFoundationViewController.m */,
+				C54ECBDD1A5E225D00026AE4 /* AVFoundationViewController.xib */,
 				C57596CD1950494B00720542 /* BaseDataType */,
 				C5073C7D195D644900E75F4D /* Calendar */,
 				C532A729197770C300344630 /* Common */,
 				C513410119F7577A0002A1E2 /* DatePicker */,
-				C57596C31950355D00720542 /* FirstViewController.h */,
-				C57596C41950355D00720542 /* FirstViewController.m */,
-				C57596C51950355D00720542 /* FirstViewController.xib */,
+				C57596C31950355D00720542 /* FoundationViewController.h */,
+				C57596C41950355D00720542 /* FoundationViewController.m */,
+				C57596C51950355D00720542 /* FoundationViewController.xib */,
 				C57596A61950290600720542 /* Images.xcassets */,
 				C57596C8195038E100720542 /* Macro */,
 				C57596A01950290600720542 /* Main.storyboard */,
 				C50C7A401951957200107C71 /* OtherFoundationClass */,
 				C57596CA195043FD00720542 /* Resource */,
 				C50C7A3A1951754600107C71 /* RichText */,
-				C54ECBDB1A5E225D00026AE4 /* SecondViewController.h */,
-				C54ECBDC1A5E225D00026AE4 /* SecondViewController.m */,
-				C54ECBDD1A5E225D00026AE4 /* SecondViewController.xib */,
 				C57596951950290600720542 /* Supporting Files */,
 				070C593E1A3C387C00C9DD5B /* UIKit */,
-				C57596A31950290600720542 /* ViewController.h */,
-				C57596A41950290600720542 /* ViewController.m */,
+				C57596A31950290600720542 /* UIKitViewController.h */,
+				C57596A41950290600720542 /* UIKitViewController.m */,
 			);
 			path = CBExampleAPI;
 			sourceTree = "<group>";
@@ -493,7 +522,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C54ECBDF1A5E225D00026AE4 /* SecondViewController.xib in Resources */,
+				C54ECBDF1A5E225D00026AE4 /* AVFoundationViewController.xib in Resources */,
 				C57596D21950499400720542 /* ArrayViewController.xib in Resources */,
 				C5073C82195D646E00E75F4D /* CalendarDemoViewController.xib in Resources */,
 				C57596A71950290600720542 /* Images.xcassets in Resources */,
@@ -501,6 +530,7 @@
 				070C59431A3C38D000C9DD5B /* TextViewViewController.xib in Resources */,
 				C54ECBEA1A5E285B00026AE4 /* 我们去探险吧.mp3 in Resources */,
 				C50C7A3919512F4700107C71 /* ArrayAPI.plist in Resources */,
+				45B27FFF1C19770900732ADD /* ImageController.xib in Resources */,
 				C57596991950290600720542 /* InfoPlist.strings in Resources */,
 				C50C7A451951959000107C71 /* BundleViewController.xib in Resources */,
 				C57596A21950290600720542 /* Main.storyboard in Resources */,
@@ -509,7 +539,7 @@
 				C54ECBE51A5E248400026AE4 /* AudioPlayerViewController.xib in Resources */,
 				C532A72E1977729400344630 /* UIKitFramework.plist in Resources */,
 				C54ECBDA1A5E217500026AE4 /* AVFoundation.plist in Resources */,
-				C57596C71950355D00720542 /* FirstViewController.xib in Resources */,
+				C57596C71950355D00720542 /* FoundationViewController.xib in Resources */,
 				C532A7341977B1E800344630 /* ActivityIndicatorViewController.xib in Resources */,
 				C5467A67197E0EE900B57807 /* AnimationViewController.xib in Resources */,
 				C5BDCDD41963F6CE00CB1034 /* DataViewController.xib in Resources */,
@@ -517,6 +547,7 @@
 				C547E8B71A43CB40000ACC43 /* taobao@2x.PNG in Resources */,
 				C5BDCDDC1963FF9600CB1034 /* DateFormatterViewController.xib in Resources */,
 				C547E8B11A43C2AC000ACC43 /* AutoresizingMaskViewController.xib in Resources */,
+				4580CB461B89DFC20012B61F /* FileManagerViewController.xib in Resources */,
 				C5BDCDD71963F78600CB1034 /* ScheduleTypeCustom.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,25 +567,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C54ECBDE1A5E225D00026AE4 /* SecondViewController.m in Sources */,
+				C54ECBDE1A5E225D00026AE4 /* AVFoundationViewController.m in Sources */,
 				C532A72C1977710900344630 /* SuperCommon.m in Sources */,
 				C5467A66197E0EE900B57807 /* AnimationViewController.m in Sources */,
-				C57596A51950290600720542 /* ViewController.m in Sources */,
+				45B27FF71C196E4A00732ADD /* UIImage+Utils.m in Sources */,
+				C57596A51950290600720542 /* UIKitViewController.m in Sources */,
 				C547E8B01A43C2AC000ACC43 /* AutoresizingMaskViewController.m in Sources */,
 				C57596D11950499400720542 /* ArrayViewController.m in Sources */,
+				45B27FFE1C19770900732ADD /* ImageController.m in Sources */,
 				C54ECBE41A5E248400026AE4 /* AudioPlayerViewController.m in Sources */,
 				C532A7331977B1E800344630 /* ActivityIndicatorViewController.m in Sources */,
 				C50C7A3E19517B5600107C71 /* AttributedStringViewController.m in Sources */,
 				C5BB62981A3EC5B20065FCE9 /* GestureRecognizerViewController.m in Sources */,
 				C50C7A441951959000107C71 /* BundleViewController.m in Sources */,
 				C5BDCDD31963F6CE00CB1034 /* DataViewController.m in Sources */,
+				4580CB451B89DFC20012B61F /* FileManagerViewController.m in Sources */,
 				C513410519F757B70002A1E2 /* DatePickerViewController.m in Sources */,
 				C5BDCDDB1963FF9600CB1034 /* DateFormatterViewController.m in Sources */,
 				070C59421A3C38D000C9DD5B /* TextViewViewController.m in Sources */,
 				C575969F1950290600720542 /* AppDelegate.m in Sources */,
 				C5073C81195D646E00E75F4D /* CalendarDemoViewController.m in Sources */,
 				C575969B1950290600720542 /* main.m in Sources */,
-				C57596C61950355D00720542 /* FirstViewController.m in Sources */,
+				C57596C61950355D00720542 /* FoundationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,7 +670,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -668,7 +702,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -682,7 +716,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CBExampleAPI/CBExampleAPI-Prefix.pch";
 				INFOPLIST_FILE = "CBExampleAPI/CBExampleAPI-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -696,7 +730,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CBExampleAPI/CBExampleAPI-Prefix.pch";
 				INFOPLIST_FILE = "CBExampleAPI/CBExampleAPI-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

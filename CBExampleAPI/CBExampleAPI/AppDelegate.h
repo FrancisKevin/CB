@@ -8,14 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-#import "ViewController.h"
-#import "FirstViewController.h"
-#import "SecondViewController.h"
+#import "UIKitViewController.h"
+#import "FoundationViewController.h"
+#import "AVFoundationViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) ViewController *vc;
+@property (strong, nonatomic) UIKitViewController *vc;
 
 @end

@@ -18,20 +18,20 @@
     
     // ViewController
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-    self.vc = [mainStoryboard instantiateViewControllerWithIdentifier:@"ViewController"];
+    self.vc = [mainStoryboard instantiateViewControllerWithIdentifier:@"UIKitViewController"];
 //    self.vc.title = NSStringFromClass([ViewController class]);
     self.vc.title = @"UIKit";
     UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:self.vc];
     nav1.navigationBar.hidden = YES;
     
     // FirstViewController
-    FirstViewController *firstVC = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
+    FoundationViewController *firstVC = [[FoundationViewController alloc] initWithNibName:@"FoundationViewController" bundle:nil];
 //    firstVC.title = NSStringFromClass([FirstViewController class]);
     firstVC.title = @"Foundation";
     UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:firstVC];
     nav2.navigationBar.hidden = YES;
     
-    SecondViewController *secondVC = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+    AVFoundationViewController *secondVC = [[AVFoundationViewController alloc] initWithNibName:@"AVFoundationViewController" bundle:nil];
     secondVC.title = @"AVFoundation";
     UINavigationController *nav3 = [[UINavigationController alloc] initWithRootViewController:secondVC];
     nav3.navigationBar.hidden = YES;

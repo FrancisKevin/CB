@@ -38,5 +38,11 @@
         <key>IsLevel2</key>
         <true/>
     </dict>
+    <dict>
+        <key>ClassName</key>
+        <string>UIImage</string>
+        <key>IsLevel2</key>
+        <true/>
+    </dict>
 </array>
 </plist>

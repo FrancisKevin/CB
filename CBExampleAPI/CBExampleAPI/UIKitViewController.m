@@ -1,33 +1,39 @@
 //
-//  SecondViewController.m
+//  ViewController.m
 //  CBExampleAPI
 //
-//  Created by xychen on 15-1-8.
-//  Copyright (c) 2015年 CB. All rights reserved.
+//  Created by xychen on 14-6-17.
+//  Copyright (c) 2014年 CB. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "UIKitViewController.h"
 
-@interface SecondViewController () <UITableViewDataSource, UITableViewDelegate>
+#import "UIImage+Utils.h"
 
-@property (strong, nonatomic) NSArray *arrayFoundation;
+#import "ImageController.h"
 
-@property (strong, nonatomic) UITableView *tbFoundationList;
+@interface UIKitViewController () <UITableViewDataSource, UITableViewDelegate>
+
+@property (strong, nonatomic) NSArray *arrayUIKit;
+
+@property (strong, nonatomic) UITableView *tbUIKitList;
 
 @end
 
-@implementation SecondViewController
+@implementation UIKitViewController
 
-#pragma mark - Life Cycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    //    NSLog(@"\n%@\n%@", NSStringFromClass([FirstViewController class]), self.view);
+	// Do any additional setup after loading the view, typically from a nib.
     
-    if (!_tbFoundationList)
-    {        
-        self.arrayFoundation = [[NSArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"AVFoundation.plist" ofType:nil]];
+    NSLog(@"加载了%@", NSStringFromClass([UIKitViewController class]));
+    
+    NSLog(@"执行[%@ %@]", NSStringFromClass([UIKitViewController class]), NSStringFromSelector(_cmd));
+    
+    if (!_tbUIKitList)
+    {
+        self.arrayUIKit = [[NSArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"UIKitFramework.plist" ofType:nil]];
         
         CGFloat originY = 0;
         CGFloat navHeight = self.navigationController.navigationBar.frame.size.height;
@@ -45,12 +51,12 @@
             height = KAppHeight-originY-navHeight-tabHeight;
         }
         
-        _tbFoundationList = [[UITableView alloc] init];
-        _tbFoundationList.frame = CGRectMake(0, originY, KAppWidth, height);
-        [self.view addSubview:_tbFoundationList];
+        _tbUIKitList = [[UITableView alloc] init];
+        _tbUIKitList.frame = CGRectMake(0, originY, KAppWidth, height);
+        [self.view addSubview:_tbUIKitList];
         
-        _tbFoundationList.dataSource = self;
-        _tbFoundationList.delegate = self;
+        _tbUIKitList.dataSource = self;
+        _tbUIKitList.delegate = self;
     }
 }
 
@@ -63,7 +69,7 @@
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.arrayFoundation.count;
+    return self.arrayUIKit.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -80,7 +86,7 @@
     cell.textLabel.textColor = [UIColor blackColor];
     
     NSInteger row = indexPath.row+1;
-    NSDictionary *dict = [self.arrayFoundation objectAtIndex:indexPath.row];
+    NSDictionary *dict = [self.arrayUIKit objectAtIndex:indexPath.row];
     cell.textLabel.text = [NSString stringWithFormat:@"%d.%@", (int)row, [dict objectForKey:@"ClassName"]];
     
     NSNumber *isLevel2 = [dict objectForKey:@"IsLevel2"];
@@ -103,9 +109,36 @@
     
     if (1 == row)
     {
-        vc = [self initViewControllerWithName:@"AudioPlayerViewController" title:@"音频播放"];
+        vc = [self initViewControllerWithName:@"ActivityIndicatorViewController" title:@"指示器"];
     }
-    
+    else if (2 == row)
+    {
+        vc = [self initViewControllerWithName:@"AnimationViewController" title:@"视图动画"];
+    }
+    else if (3 == row)
+    {
+        vc = [self initViewControllerWithName:@"DatePickerViewController" title:@"日期选择器"];
+    }
+    else if (4 == row)
+    {
+        vc = [self initViewControllerWithName:@"TextViewViewController" title:@"多行文本框"];
+    }
+    else if (5 == row)
+    {
+        vc = [self initViewControllerWithName:@"GestureRecognizerViewController" title:@"点击手势"];
+    }
+    else if (6 == row)
+    {
+        vc = [self initViewControllerWithName:@"AutoresizingMaskViewController" title:@"子视图自适应父视图size"];
+    }
+    else if (7 == row)
+    {
+        UIImage *image = [UIImage getScreenshotWithView:self.view];
+        ImageController *imgVC = [ImageController imageController];
+        imgVC.title = @"截取View生成图片";
+        imgVC.imgScreenshot = image;
+        vc = imgVC;
+    }
     
     if (vc)
     {

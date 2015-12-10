@@ -118,9 +118,9 @@
 	</dict>
 	<dict>
 		<key>ClassName</key>
-		<string>NSEnumerator.h</string>
+		<string>NSFileManager</string>
 		<key>IsLevel2</key>
-		<false/>
+		<true/>
 	</dict>
 </array>
 </plist>
